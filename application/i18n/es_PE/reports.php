@@ -8,7 +8,7 @@ $lang = array(
 	'incident_id' => array(
 		'required' => 'Por favor verifica que has seleccionado un ítem.',
 		'numeric' => 'Por favor verifica que has seleccionado un ítem.',
-		'categories_required' => 'Los reportes deben ser categorizados antes de ser aprobados',
+		'categories_required' => 'Los incidencias deben ser categorizados antes de ser aprobados',
 	) ,
 	'action' => array(
 		'permission' => 'No tiene permisos para realizar esta acción',

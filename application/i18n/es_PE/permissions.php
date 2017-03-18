@@ -5,13 +5,13 @@
 // I18n generated at: 2014-09-27 05:34+0000
 // PO revision date:  2014-04-03 16:09+0000
 $lang = array(
-	'reports_view' => 'Ver reportes',
-	'reports_edit' => 'Crear/Editar/Borrar reportes',
-	'reports_approve' => 'Aprobar reportes',
-	'reports_verify' => 'Verificar Reportes',
-	'reports_comments' => 'Administrar comentario y reportes',
-	'reports_download' => 'Descargar reportes',
-	'reports_upload' => 'Subir reportes',
+	'reports_view' => 'Ver incidencias',
+	'reports_edit' => 'Crear/Editar/Borrar incidencias',
+	'reports_approve' => 'Aprobar incidencias',
+	'reports_verify' => 'Verificar Incidencias',
+	'reports_comments' => 'Administrar comentario y incidencias',
+	'reports_download' => 'Descargar incidencias',
+	'reports_upload' => 'Subir incidencias',
 	'messages' => 'Administrar mensajes',
 	'messages_reporters' => 'Administrar informantes',
 	'stats' => 'Ver estadísticas',
@@ -23,5 +23,5 @@ $lang = array(
 	'checkin_admin' => 'Administrar verificaciones',
 	'admin_ui' => 'Acceso administración',
 	'member_ui' => 'Acceso a miembros',
-	'delete_all_reports' => 'Eliminar todos los reportes',
+	'delete_all_reports' => 'Eliminar todos los incidencias',
 );
