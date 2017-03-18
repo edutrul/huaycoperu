@@ -23,7 +23,7 @@ $lang = array(
 	'no_controller' => 'Ushahidi no pudo encontrar un controlador para ejecutar este pedido: %s',
 	'no_default_route' => 'Por favor seleccione una ruta predeterminada en config/routes.php',
 	'page_not_found' => 'La página solicitada, %s, no fue encontrada.',
-	'report_bug' => '<a href="%s" id="show_bugs">Reporte esto a Ushahidi</a>',
+	'report_bug' => '<a href="%s" id="show_bugs">incidencia esto a Ushahidi</a>',
 	'resource_not_found' => 'El %s solicitado, %s, no fue encontrado',
 	'stack_trace' => 'Stack Trace',
 	'stats_footer' => 'Cargado en {execution_time} segundos, utilizando {memory_usage} de memoria. Generado por Ushahidi v%s.',

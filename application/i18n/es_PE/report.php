@@ -7,7 +7,7 @@
 $lang = array(
 	'comments_form_error' => '¡Error!',
 	'country_name' => array(
-		'single_country' => 'La ubicación del reporte debe estar dentro del país seleccionado en la configuración del sistema %s.',
+		'single_country' => 'La ubicación del incidencia debe estar dentro del país seleccionado en la configuración del sistema %s.',
 	) ,
 	'custom_field' => array(
 		'values' => 'Por favor ingrese un valor válido para el "%s" campo.',
@@ -91,9 +91,9 @@ $lang = array(
 		'length' => 'Por favor ingrese un valor válido para Confiabilidad de la fuente',
 	) ,
 	'incident_title' => array(
-		'length' => 'El campo "Titulo de Reporte" debe tener al menos 3 y no más de 200 caracteres de largo.',
-		'required' => 'El campo "Título de Reporte" es obligatorio.',
-		'csrf' => 'Posible ataque CSRF. ¿Realmente quiere crear/editar un reporte?',
+		'length' => 'El campo "Titulo de incidencia" debe tener al menos 3 y no más de 200 caracteres de largo.',
+		'required' => 'El campo "Título de incidencia" es obligatorio.',
+		'csrf' => 'Posible ataque CSRF. ¿Realmente quiere crear/editar incidencia?',
 	) ,
 	'incident_verified' => array(
 		'between' => 'Por favor ingrese un valor válido para Verificar Este Informe',

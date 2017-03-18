@@ -10,8 +10,8 @@ $lang = array(
 		'required' => 'El campo latitud es requerido. Por favor haga click en el mapa para seleccionar una ubicación.',
 	) ,
 	'level_id' => array(
-		'numeric' => 'El campo Nivel de Reporte parece no contener una nivel válido.',
-		'required' => 'El campo Nivel de Reporte parece no contener una nivel válido.',
+		'numeric' => 'El campo Nivel de incidencia parece no contener una nivel válido.',
+		'required' => 'El campo Nivel de incidencia parece no contener una nivel válido.',
 	) ,
 	'location_name' => array(
 		'length' => 'El campo nombre de ubicación debe tener al menos 3 y no más de 200 caracteres de largo.',
@@ -21,7 +21,7 @@ $lang = array(
 		'between' => 'El campo longitud parece no contener una longitud válida.',
 		'required' => 'El campo longitud es obligatorio. Por favor haga click en el mapa para seleccionar una ubicación.',
 	) ,
-	'reporter_id' => array(
+	'incidenciar_id' => array(
 		'numeric' => 'Informante no válido',
 		'required' => 'Informante no válido',
 	) ,
