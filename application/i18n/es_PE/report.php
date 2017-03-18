@@ -25,14 +25,14 @@ $lang = array(
 		'numeric' => 'Por favor seleccionar  un item válido para incluir en la descarga',
 	) ,
 	'data_active' => array(
-		'between' => 'Por favor seleccione "Reportes Esperando Aprobación" o "Reportes Aprobados" o ambos.',
-		'numeric' => 'Por favor seleccione "Reportes Esperando Aprobación" o "Reportes Aprobados" o ambos.',
-		'required' => 'Por favor seleccione "Reportes Esperando Aprobación" o "Reportes Aprobados" o ambos.',
+		'between' => 'Por favor seleccione "Incidencias Esperando Aprobación" o "Incidencias Aprobados" o ambos.',
+		'numeric' => 'Por favor seleccione "Incidencias Esperando Aprobación" o "Incidencias Aprobados" o ambos.',
+		'required' => 'Por favor seleccione "Incidencias Esperando Aprobación" o "Incidencias Aprobados" o ambos.',
 	) ,
 	'data_verified' => array(
-		'between' => 'Por favor seleccione "Reportes Esperando Aprobación" o "Reportes Aprobados" o ambos.',
-		'numeric' => 'Por favor seleccione "Reportes Esperando Aprobación" o "Reportes Aprobados" o ambos.',
-		'required' => 'Por favor seleccione "Reportes Esperando Aprobación" o "Reportes Aprobados" o ambos.',
+		'between' => 'Por favor seleccione "Incidencias Esperando Aprobación" o "Incidencias Aprobados" o ambos.',
+		'numeric' => 'Por favor seleccione "Incidencias Esperando Aprobación" o "Incidencias Aprobados" o ambos.',
+		'required' => 'Por favor seleccione "Incidencias Esperando Aprobación" o "Incidencias Aprobados" o ambos.',
 	) ,
 	'data_point' => array(
 		'between' => 'Por favor seleccionar un tipo válido de informe a descargar',
@@ -41,7 +41,7 @@ $lang = array(
 	) ,
 	'format' => array(
 		'required' => 'Debe seleccionar un formato de descarga. Seleccione CSV o XML',
-		'valid' => 'Por favor, seleccione un formato válido para descargar sus reportes.',
+		'valid' => 'Por favor, seleccione un formato válido para descargar sus incidencias.',
 	) ,
 	'from_date' => array(
 		'date_mmddyyyy' => 'El campo fecha DESDE parece no contener una fecha válida.',
