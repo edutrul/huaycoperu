@@ -7,7 +7,7 @@
 $lang = array(
 	'comments_form_error' => '¡Error!',
 	'country_name' => array(
-		'single_country' => 'La ubicación del incidencia debe estar dentro del país seleccionado en la configuración del sistema %s.',
+		'single_country' => 'La ubicación de la incidencia debe estar dentro del país seleccionado en la configuración del sistema %s.',
 	) ,
 	'custom_field' => array(
 		'values' => 'Por favor ingrese un valor válido para el "%s" campo.',
