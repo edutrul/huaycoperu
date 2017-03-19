@@ -39,7 +39,7 @@
 		<!-- Report listing -->
 		<div class="r_cat_tooltip"><a href="#" class="r-3"></a></div>
 		<div class="rb_list-and-map-box">
-			<div class="card horizontal" id="rb_list-view">
+			<div id="rb_list-view">
 			<?php
 				foreach ($incidents as $incident)
 				{
@@ -85,6 +85,7 @@
 						}
 					}
 				?>
+				<div class="card horizontal">
 				<div class="card-image">
 					<p class="r_photo"> <a href="<?php echo $incident_url; ?>">
 						<img alt="<?php echo html::escape($incident_title); ?>" src="<?php echo $incident_thumb; ?>" /> </a>
@@ -119,6 +120,7 @@
 						Event::run('ushahidi_action.report_extra_details', $incident_id);
 						?>
 					</div>
+				</div>
 				</div>
 			<?php } ?>
 			</div>
