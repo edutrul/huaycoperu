@@ -1,3 +1,40 @@
+
+</div>
+<div class="ayuda-incidencia">
+  <div class="row">
+    <div class="ayuda-content">
+      <h5>Ayuda a que la ayuda llegue.</h5>
+      <h4>Informa si estás en una zona con una situación de emergencia o que necesita apoyo.</h4>
+      <form action="#">
+				<p>
+				  <input class="with-gap" name="group3" type="radio" id="test1" checked />
+				  <label for="test1">Falta de comida, agua u hogar</label>
+				</p>
+				<p>
+				  <input class="with-gap" name="group3" type="radio" id="test2" checked />
+				  <label for="test2">Huayco, inundación, lluvia</label>
+				</p>
+				<p>
+				  <input class="with-gap" name="group3" type="radio" id="test3" checked />
+				  <label for="test3">Carretera o puerto bloqueado</label>
+				</p>
+				<p>
+				  <input class="with-gap" name="group3" type="radio" id="test4" checked />
+				  <label for="test4">Personas o animales en peligro</label>
+				</p>
+				<p>
+				  <input class="with-gap" name="group3" type="radio" id="test5" checked />
+				  <label for="test5">Otros</label>
+				</p>
+      </form>
+      <a href="<?php url::site(); ?>/reports/submit" class="btn btn-large red">ENVIAR INCIDENCIA</a>
+      <p class="informa-ayuda">Informa responsablemente.</p>
+    </div>
+  </div>
+</div>
+
+	<!-- wrapper -->
+	<div class="container">
 	<?php if ($site_message != ''): ?>
 		<div class="green-box">
 			<h3><?php echo $site_message; ?></h3>

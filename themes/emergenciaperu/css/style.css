@@ -9197,6 +9197,104 @@ a.filter-button:hover {
   box-shadow: 0 1px 0 0 #ff5139;
 }
 
+.ayuda-incidencia {
+  background: #f6f3f3;
+}
+
+.ayuda-incidencia h5 {
+  padding-top: 55px;
+  text-align: center;
+  margin: 0 0 5px 0;
+}
+
+.ayuda-incidencia h4 {
+  color: #797475;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 25px 0;
+}
+
+.ayuda-incidencia .ayuda-content {
+  max-width: 525px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 15px;
+}
+
+@media (min-width: 480px) {
+  .ayuda-incidencia .ayuda-content {
+    padding: 0 0;
+  }
+}
+
+.ayuda-incidencia form {
+  max-width: 245px;
+  margin: 0 auto;
+}
+
+.ayuda-incidencia form p {
+  margin-bottom: 0;
+}
+
+.ayuda-incidencia form label {
+  font-size: 14px !important;
+  padding-left: 32px !important;
+  color: black;
+  font-weight: 600;
+}
+
+.ayuda-incidencia a {
+  text-decoration: none;
+  color: white;
+  background: #FF5139;
+  margin: 25px 0 0 0;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  font-size: 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0px 5px 0px 0px #9D3121, 0px 0px 20px 0px transparent;
+  height: auto;
+}
+
+@media (min-width: 480px) {
+  .ayuda-incidencia a {
+    padding: 15px 39px 14px 39px;
+  }
+}
+
+.ayuda-incidencia a:hover {
+  background: #FF5139;
+  box-shadow: 0px 5px 0px 0px #9D3121, 0px 0px 20px 0px transparent;
+}
+
+.ayuda-incidencia a:active {
+  top: 5px;
+  box-shadow: 0px 5px 0px 0px #9D3121, 0px 0px 20px 0px transparent;
+}
+
+.ayuda-incidencia .informa-ayuda {
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+  margin: 15px 0 50px 0;
+}
+
+[type="radio"]:not(:checked) + label:before, [type="radio"]:not(:checked) + label:after {
+  border: 1px solid #cccccc;
+}
+
+[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after {
+  border: 1px solid #cccccc;
+}
+
+[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:after {
+  background-color: #ff5139;
+}
+
 .brindar-ayuda-section {
   margin-top: 90px;
   padding: 80px 0;

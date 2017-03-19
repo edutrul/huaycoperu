@@ -27,3 +27,5 @@
 2017-03-19 15:13:17 +00:00 --- error: Uncaught PHP Error: mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in file C:/xampp/htdocs/huaycoperu/system/libraries/drivers/Database/Mysqli.php on line 52
 2017-03-19 15:13:17 +00:00 --- error: Uncaught PHP Error: mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in file C:/xampp/htdocs/huaycoperu/system/libraries/drivers/Database/Mysqli.php on line 52
 2017-03-19 15:13:36 +00:00 --- error: Uncaught PHP Error: mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in file C:/xampp/htdocs/huaycoperu/system/libraries/drivers/Database/Mysqli.php on line 52
+2017-03-19 15:34:36 -05:00 --- error: Excepción no atrapada PHP Error: Undefined variable: submit_btn en el archivo C:/xampp/htdocs/huaycoperu/themes/emergenciaperu/views/main/layout.php en la línea 28
+2017-03-19 15:34:46 -05:00 --- error: Excepción no atrapada PHP Error: Undefined variable: submit_btn en el archivo C:/xampp/htdocs/huaycoperu/themes/emergenciaperu/views/main/layout.php en la línea 28
