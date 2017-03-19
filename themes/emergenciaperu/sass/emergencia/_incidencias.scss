@@ -2,11 +2,15 @@
     margin-top: 55px;
     margin-bottom: 90px;
 
+    .map, #mapStatus, .slider-holder {
+        width: 100%;
+    }
+
     .category-filters a {
         padding: 14px;
         display: block;
         color: #222224;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
         margin-bottom: 5px;
         border: solid 1px transparent;
