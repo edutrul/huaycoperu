@@ -8,7 +8,7 @@
  *
  * Valid drivers are: native, sendmail, smtp
  */
-$config['driver'] = 'native';
+$config['driver'] = 'smtp';
 
 /**
  * To use secure connections with SMTP, set "port" to 465 instead of 25.
@@ -19,7 +19,12 @@ $config['driver'] = 'native';
  * @param   string  sendmail: executable path, with -bs or equivalent attached
  * @param   array   smtp: hostname, (username), (password), (port), (auth), (encryption)
  */
-$config['options'] = NULL;
+$config['options'] = [
+    'hostname' => 'smtp.mailtrap.io',
+    'username' => '452938a81f43ffc76',
+    'password' => '7a98377241c01f',
+    'port' => '2525'
+];
 
 
 $config['max_imap_messages'] = 10;

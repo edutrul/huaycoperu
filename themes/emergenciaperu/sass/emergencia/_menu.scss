@@ -1,0 +1,163 @@
+.emergencia-menu {
+  border-bottom: solid 1px #979797;
+    
+    nav {
+      height: 100%;
+      line-height: 100px;
+      .nav-wrapper{
+        padding: 0 0;
+      }
+    }
+
+    .row {
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+
+    .brand-logo img {
+        max-width: 264px;
+        margin-left: 15px;
+        vertical-align: middle;
+    }
+
+    a {
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: color("grey", "lighten-4");
+            text-decoration: none;
+            color: $navbar-font-color;
+        }
+    }
+
+    a.brand-logo:hover {
+        background-color: transparent;
+    }
+
+    a.btn {
+        background-color: #fff;
+        border: solid 1px #cccccc;
+        box-shadow: none;
+        padding-left: 14px;
+        padding-right: 14px;
+        overflow: visible;
+        color: #222224!important;
+
+        &:hover {
+            background-color: color("grey", "lighten-4");
+        }
+
+        &:before {
+            content: "#Unasolafuerza";
+            color: #ff5139;
+            position: absolute;
+            top: -31px;
+            text-transform: initial;
+            width: 100%;
+            text-align: center;
+            margin-left: -14px;
+        }
+    }
+
+    a.btn img {
+        vertical-align: middle;
+        margin-right: 5px;
+        max-height: 22px;
+    }
+
+    ul {
+      li {
+                &:last-child a {
+                    margin-right: 0;
+                }
+        }
+    }
+    
+    //- RESPONSIVE
+
+    .button-collapse {
+        height: 95px;
+        .material-icons {
+                height: 95px;
+                line-height: 95px;
+                font-size: 35px;
+        }
+    }
+
+    #mobile-demo {
+        display: none;
+            position: relative;
+            width: 100%;
+            clear: both;
+            line-height: 50px;
+            background: white;
+            left: 0;
+            z-index: 3;
+
+            li {
+                width: 100%;
+                border-bottom: 1px solid black;
+                float: none;
+                &:last-child {
+                    border-bottom: 0px solid black;
+                }
+                
+                a {
+                    line-height: 50px;
+                }
+                
+                .btn {
+                    margin: 0 0 0 143px;
+                    line-height: 30px;
+                    &:before {
+                        content: "#Unasolafuerza";
+                        color: #ff5139;
+                        position: absolute;
+                        top: 0;
+                        left: -150px;
+                        text-transform: initial;
+                        width: 100%;
+                        text-align: center;
+                        margin-left: -14px;
+                    }
+                }
+            }
+    }
+}
+
+
+@media (max-width: 1350px) {
+  .emergencia-menu {
+    a {
+        font-size: 13px;
+        padding: 0 8px;
+    }
+
+    a.btn {
+        margin: 0 0 0 15px;
+    }
+
+    .brand-logo img {
+        max-width: 220px;
+        margin-left: 0;
+        margin-top: -6px;
+    }
+
+  }
+}
+
+@media (max-width: 1130px) {
+    .brand-logo img {
+        max-width: 150px!important;
+        margin-left: 0;
+        margin-top: -6px;
+    }
+}
+
+@media (max-width: 990px) {
+    .brand-logo img {
+        max-width: 220px!important;
+    }
+}
