@@ -41,8 +41,10 @@
 @import "components/date_picker/default.date";
 @import "components/date_picker/default.time";
 
+@import "emergencia/vars";
 @import "emergencia/global";
 @import "emergencia/menu";
 @import "emergencia/incidencias";
 @import "emergencia/block-reports";
 @import "emergencia/footer";
+@import "emergencia/alertas";
