@@ -8,7 +8,7 @@
 	</div>
 
 	<div class="footer row center">
-		<p>Está página ha sido hecha colaborativamente en Hackspace Perú. <a href="#">CONTACTO</a></p>
+		<p>Está página ha sido hecha colaborativamente en Hackspace Perú.</p>
 	</div>
 
 	<?php
