@@ -93,3 +93,9 @@
         margin-top: -6px;
     }
 }
+
+@media (max-width: 960px) {
+    .brand-logo img {
+        max-width: 220px!important;
+    }
+}

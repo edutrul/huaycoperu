@@ -8527,6 +8527,12 @@ h5 {
   }
 }
 
+@media (max-width: 960px) {
+  .brand-logo img {
+    max-width: 220px !important;
+  }
+}
+
 .incidencias {
   margin-top: 55px;
   margin-bottom: 75px;
