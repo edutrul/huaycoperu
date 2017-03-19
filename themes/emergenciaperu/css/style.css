@@ -8525,6 +8525,290 @@ h5 {
   font-weight: 700;
 }
 
+.page-alerts .big-block {
+  margin-top: 55px;
+}
+
+.page-alerts .big-block h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+
+.page-alerts .olControlZoom a {
+  opacity: .8;
+  background: #ff5139;
+}
+
+.page-alerts .olControlZoom a:hover {
+  background: #9f1300;
+}
+
+.page-alerts .step-1 .map-wrapper .map-holder {
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25% !important;
+  position: relative;
+}
+
+.page-alerts .step-1 .map-wrapper .map-holder .olMapViewport {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.lista-incidencias {
+  margin-top: 65px;
+}
+
+.lista-incidencias span.badge.new:after {
+  content: "";
+}
+
+.report-stats-container {
+  padding-top: 30px;
+}
+
+#rb_list-view p, .r_description {
+  margin-bottom: 10px;
+}
+
+.link-toggle li {
+  display: inline-block;
+}
+
+.report-list-toggle li {
+  margin-right: 10px;
+}
+
+/* Filter List */
+ul.filter-list {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.filter-list ul {
+  list-style-type: none;
+  padding: 0 0 0 20px;
+}
+
+ul.filter-list li {
+  display: block;
+  position: relative;
+}
+
+ul.filter-list li a {
+  display: block;
+  position: relative;
+  overflow: auto;
+  padding: 3px 0 3px 20px;
+  margin-bottom: 3px;
+}
+
+ul.filter-list li a.selected {
+  background: #dbdbdb url("../images/icon_sprite-2.png") -22px -103px no-repeat;
+  z-index: 120;
+  color: #636363;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+ul.filter-list li a span.item-swatch {
+  display: block;
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+  border: 1px solid white;
+  float: left;
+  overflow: hidden;
+}
+
+ul.filter-list li a span.item-icon {
+  display: block;
+  float: left;
+  margin-right: 8px;
+  height: 16px;
+  width: 16px;
+}
+
+ul.filter-list li a span.item-title {
+  display: block;
+  padding: 0 40px 0 26px;
+}
+
+ul.filter-list li a span.item-count {
+  display: block;
+  padding: 1px 3px;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  background: #dbdbdb;
+  color: #636363;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+ul.filter-list li li {
+  position: relative;
+}
+
+ul.filter-list li a.btn-cancel {
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  height: 25px;
+  width: 20px;
+  text-indent: -23423px;
+  background: transparent url("../images/icon_sprite-2.png") -22px -103px no-repeat;
+  z-index: 120;
+}
+
+/* For child categories because nested UL/LIs are difficult in this case */
+li.report-listing-category-child {
+  padding-left: 20px;
+}
+
+/* Filter Controls */
+#filter-controls {
+  position: relative;
+  padding: 15px;
+  margin-top: -2px;
+}
+
+a.filter-button {
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 5px 8px;
+  font-weight: bold;
+  background: #ff5139;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+a.filter-button:hover {
+  text-decoration: none;
+  background: #707070;
+}
+
+.report-stats-container {
+  display: none;
+}
+
+/* Icons */
+/* things */
+.ic-sms {
+  background: transparent url(../images/icons/mobile-phone.png) no-repeat;
+}
+
+.ic-email {
+  background: transparent url(../images/icons/mail.png) no-repeat;
+}
+
+.ic-rss {
+  background: transparent url(../images/icons/social-rss.png) no-repeat;
+}
+
+.ic-webform {
+  background: transparent url(../images/icons/application-form.png) no-repeat;
+}
+
+.ic-photos {
+  background: transparent url(../images/icons/images.png) no-repeat;
+}
+
+.ic-videos {
+  background: transparent url(../images/icons/films.png) no-repeat;
+}
+
+.ic-news {
+  background: transparent url(../images/icons/newspapers.png) no-repeat;
+}
+
+.ic-verified {
+  background: transparent url(../images/icons/tick-button.png) no-repeat;
+}
+
+.ic-unverified {
+  background: transparent url(../images/icons/cross-button.png) no-repeat;
+}
+
+/* social */
+.ic-twitter {
+  background: transparent url(../images/icons/twitter.png) no-repeat;
+}
+
+.ic-facebook {
+  background: transparent url(../images/icons/facebook.png) no-repeat;
+}
+
+.ic-youtube {
+  background: transparent url(../images/icons/youtube.png) no-repeat;
+}
+
+.ic-foursquare {
+  background: transparent url(../images/icons/foursquare.png) no-repeat;
+}
+
+.ic-meetup {
+  background: transparent url(../images/icons/meetup.png) no-repeat;
+}
+
+.ic-posterous {
+  background: transparent url(../images/icons/posterous.png) no-repeat;
+}
+
+.ic-reddit {
+  background: transparent url(../images/icons/reddit.png) no-repeat;
+}
+
+.ic-tumblr {
+  background: transparent url(../images/icons/tumblr.png) no-repeat;
+}
+
+.ic-yelp {
+  background: transparent url(../images/icons/yelp.png) no-repeat;
+}
+
+.ic-linkedin {
+  background: transparent url(../images/icons/linkedin.png) no-repeat;
+}
+
+.ic-stumbleupon {
+  background: transparent url(../images/icons/stumbleupon.png) no-repeat;
+}
+
+.ic-technorati {
+  background: transparent url(../images/icons/technorati.png) no-repeat;
+}
+
+.ic-vimeo {
+  background: transparent url(../images/icons/vimeo.png) no-repeat;
+}
+
+#accordion .ui-accordion-header a.hide {
+  display: none;
+}
+
+.ui-datepicker {
+  display: none;
+}
+
+/* fixes bug where an empty datepicker div was showing up on the bottom of the reports page */
+.badge {
+  float: left;
+  width: 100px;
+  text-align: center;
+  background-color: #E9E9E9;
+  padding: 5px;
+  margin: 0px 5px;
+}
+
 .brindar-ayuda-section {
   margin-top: 90px;
   padding: 80px 0;
@@ -8580,38 +8864,4 @@ h5 {
   color: #666666;
   font-weight: 700;
   text-decoration: underline;
-}
-
-.page-alerts .big-block {
-  margin-top: 55px;
-}
-
-.page-alerts .big-block h1 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 35px;
-  margin-top: 0;
-}
-
-.page-alerts .olControlZoom a {
-  opacity: .8;
-  background: #ff5139;
-}
-
-.page-alerts .olControlZoom a:hover {
-  background: #9f1300;
-}
-
-.page-alerts .step-1 .map-wrapper .map-holder {
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25% !important;
-  position: relative;
-}
-
-.page-alerts .step-1 .map-wrapper .map-holder .olMapViewport {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
 }
