@@ -30,3 +30,10 @@
 2017-03-19 15:34:36 -05:00 --- error: Excepción no atrapada PHP Error: Undefined variable: submit_btn en el archivo C:/xampp/htdocs/huaycoperu/themes/emergenciaperu/views/main/layout.php en la línea 28
 2017-03-19 15:34:46 -05:00 --- error: Excepción no atrapada PHP Error: Undefined variable: submit_btn en el archivo C:/xampp/htdocs/huaycoperu/themes/emergenciaperu/views/main/layout.php en la línea 28
 2017-03-19 15:45:35 -05:00 --- error: Excepción no atrapada PHP Error: Trying to get property of non-object en el archivo C:/xampp/htdocs/huaycoperu/application/controllers/scheduler/s_twitter.php en la línea 98
+2017-03-19 20:48:52 +00:00 --- error: Uncaught PHP Error: mysqli::mysqli(): MySQL server has gone away in file C:/xampp/htdocs/huaycoperu/system/libraries/drivers/Database/Mysqli.php on line 52
+2017-03-19 15:51:48 -05:00 --- error: Excepción no atrapada PHP Error: Trying to get property of non-object en el archivo C:/xampp/htdocs/huaycoperu/application/controllers/scheduler/s_twitter.php en la línea 98
+2017-03-19 21:12:41 +00:00 --- error: Uncaught PHP Error: mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in file C:/xampp/htdocs/huaycoperu/system/libraries/drivers/Database/Mysqli.php on line 52
+2017-03-19 21:12:44 +00:00 --- error: Uncaught PHP Error: mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in file C:/xampp/htdocs/huaycoperu/system/libraries/drivers/Database/Mysqli.php on line 52
+2017-03-19 21:12:44 +00:00 --- error: Uncaught PHP Error: mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in file C:/xampp/htdocs/huaycoperu/system/libraries/drivers/Database/Mysqli.php on line 52
+2017-03-19 21:12:49 +00:00 --- error: Uncaught PHP Error: mysqli::mysqli(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in file C:/xampp/htdocs/huaycoperu/system/libraries/drivers/Database/Mysqli.php on line 52

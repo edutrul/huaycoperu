@@ -64,3 +64,32 @@
         max-height: 22px;
     }
 }
+
+
+@media (max-width: 1350px) {
+  .emergencia-menu {
+    a {
+        font-size: 13px;
+        padding: 0 8px;
+    }
+
+    a.btn {
+        margin: 0 0 0 15px;
+    }
+
+    .brand-logo img {
+        max-width: 220px;
+        margin-left: 0;
+        margin-top: -6px;
+    }
+
+  }
+}
+
+@media (max-width: 1130px) {
+    .brand-logo img {
+        max-width: 150px!important;
+        margin-left: 0;
+        margin-top: -6px;
+    }
+}
