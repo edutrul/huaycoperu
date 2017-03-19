@@ -4,7 +4,7 @@
 	<div class="row brindar-ayuda-section red center">
 		<p class="heading">Unidos somos <strong>#unasolafuerza</strong></p>
 		<p>Juntos podemos dar apoyo a los que más necesitan</p>
-		<a href="#" class="btn btn-large">Brindar ayuda</a>
+		<a href="http://unasolafuerza.pe/" class="btn btn-large" target="_blank">Brindar ayuda</a>
 	</div>
 
 	<div class="footer row center">
