@@ -68,12 +68,12 @@
                   <a href="<?php echo url::site(); ?>" class="brand-logo"><img src="<?php echo url::file_loc('img'); ?>media/img/logo.png" /></a>
                   <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <?php nav::main_tabs($this_page, ['home','contact']); ?>
-                    <li><a href="http://unasolafuerza.pe/" class="waves-effect waves-light btn grey-text" target="_blank"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA</a></li>
+                    <li><a href="<?php echo url::site(); ?>voluntarios" class="waves-effect waves-light btn grey-text" target="_blank"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA</a></li>
                   </ul>
 
                   <ul id="mobile-demo" class="close">
                     <?php nav::main_tabs($this_page, ['contact']); ?>
-                    <li><a href="" class="waves-effect waves-light btn grey-text"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA</a></li>
+                    <li><a href="<?php echo url::site(); ?>voluntarios" class="waves-effect waves-light btn grey-text"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA</a></li>
                   </ul>
 
                 </div>
