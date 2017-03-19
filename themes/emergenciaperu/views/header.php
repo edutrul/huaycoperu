@@ -42,7 +42,7 @@
   // we're on the home page
   if (count($uri_segments) == 0)
   {
-  	$body_class = "page-main";
+    $body_class = "page-main";
   }
   // 1st tier pages
   elseif (count($uri_segments) == 1)
@@ -58,19 +58,28 @@
 
 <body id="page" class="<?php echo $body_class; ?>">
 
-	<div class="emergencia-menu">
+  <div class="emergencia-menu">
         <div class="container">
             <nav class="white row">
                 <div class="nav-wrapper col s12">
+                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                  <a href="#" class="brand-logo"><img src="<?php echo url::file_loc('img'); ?>media/img/logo.png" /></a>
+
                   <a href="<?php echo url::site(); ?>" class="brand-logo"><img src="<?php echo url::file_loc('img'); ?>media/img/logo.png" /></a>
                   <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <?php nav::main_tabs($this_page, ['home','contact']); ?>
                     <li><a href="http://unasolafuerza.pe/" class="waves-effect waves-light btn grey-text" target="_blank"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA</a></li>
                   </ul>
+
+                  <ul id="mobile-demo" class="close">
+                    <?php nav::main_tabs($this_page, ['contact']); ?>
+                    <li><a href="" class="waves-effect waves-light btn grey-text"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA</a></li>
+                  </ul>
+
                 </div>
             </nav>
         </div>
     </div>
 
-	<!-- wrapper -->
-	<div class="container">
+  <!-- wrapper -->
+  <div class="container">

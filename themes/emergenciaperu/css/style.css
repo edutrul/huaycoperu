@@ -8442,8 +8442,12 @@ h5 {
 }
 
 .emergencia-menu nav {
-  height: 100px;
+  height: 100%;
   line-height: 100px;
+}
+
+.emergencia-menu nav .nav-wrapper {
+  padding: 0 0;
 }
 
 .emergencia-menu .row {
@@ -8502,6 +8506,62 @@ h5 {
   vertical-align: middle;
   margin-right: 5px;
   max-height: 22px;
+}
+
+.emergencia-menu ul li:last-child a {
+  margin-right: 0;
+}
+
+.emergencia-menu .button-collapse {
+  height: 95px;
+}
+
+.emergencia-menu .button-collapse .material-icons {
+  height: 95px;
+  line-height: 95px;
+  font-size: 35px;
+}
+
+.emergencia-menu #mobile-demo {
+  display: none;
+  position: relative;
+  width: 100%;
+  clear: both;
+  line-height: 50px;
+  background: white;
+  left: 0;
+  z-index: 3;
+}
+
+.emergencia-menu #mobile-demo li {
+  width: 100%;
+  border-bottom: 1px solid black;
+  float: none;
+}
+
+.emergencia-menu #mobile-demo li:last-child {
+  border-bottom: 0px solid black;
+}
+
+.emergencia-menu #mobile-demo li a {
+  line-height: 50px;
+}
+
+.emergencia-menu #mobile-demo li .btn, .emergencia-menu #mobile-demo li .btn-large {
+  margin: 0 0 0 143px;
+  line-height: 30px;
+}
+
+.emergencia-menu #mobile-demo li .btn:before, .emergencia-menu #mobile-demo li .btn-large:before {
+  content: "#Unasolafuerza";
+  color: #ff5139;
+  position: absolute;
+  top: 0;
+  left: -150px;
+  text-transform: initial;
+  width: 100%;
+  text-align: center;
+  margin-left: -14px;
 }
 
 @media (max-width: 1350px) {

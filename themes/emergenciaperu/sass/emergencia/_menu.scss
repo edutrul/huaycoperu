@@ -1,9 +1,12 @@
 .emergencia-menu {
   border-bottom: solid 1px #979797;
-
+    
     nav {
-        height: 100px;
-        line-height: 100px;
+      height: 100%;
+      line-height: 100px;
+      .nav-wrapper{
+        padding: 0 0;
+      }
     }
 
     .row {
@@ -62,6 +65,65 @@
         vertical-align: middle;
         margin-right: 5px;
         max-height: 22px;
+    }
+
+    ul {
+      li {
+                &:last-child a {
+                    margin-right: 0;
+                }
+        }
+    }
+    
+    //- RESPONSIVE
+
+    .button-collapse {
+        height: 95px;
+        .material-icons {
+                height: 95px;
+                line-height: 95px;
+                font-size: 35px;
+        }
+    }
+
+    #mobile-demo {
+        display: none;
+            position: relative;
+            width: 100%;
+            clear: both;
+            line-height: 50px;
+            background: white;
+            left: 0;
+            z-index: 3;
+
+            li {
+                width: 100%;
+                border-bottom: 1px solid black;
+                float: none;
+                &:last-child {
+                    border-bottom: 0px solid black;
+                }
+                
+                a {
+                    line-height: 50px;
+                }
+                
+                .btn {
+                    margin: 0 0 0 143px;
+                    line-height: 30px;
+                    &:before {
+                        content: "#Unasolafuerza";
+                        color: #ff5139;
+                        position: absolute;
+                        top: 0;
+                        left: -150px;
+                        text-transform: initial;
+                        width: 100%;
+                        text-align: center;
+                        margin-left: -14px;
+                    }
+                }
+            }
     }
 }
 

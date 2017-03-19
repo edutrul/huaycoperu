@@ -16,6 +16,11 @@
 	// Action::main_footer - Add items before the </body> tag
 	Event::run('ushahidi_action.main_footer');
 	?>
+	<script type="text/javascript">
+		$(".button-collapse").click(function() {
+		  $("#mobile-demo").slideToggle('100');
 
+		});
+	</script>
 </body>
 </html>
