@@ -8320,7 +8320,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   }
 }
 
-html {
+html, body {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -8404,11 +8404,15 @@ h5 {
 
 .incidencias {
   margin-top: 55px;
-  margin-bottom: 90px;
+  margin-bottom: 75px;
 }
 
 .incidencias .map, .incidencias #mapStatus, .incidencias .slider-holder {
   width: 100%;
+}
+
+.incidencias .slider-holder {
+  padding-left: 0;
 }
 
 .incidencias .category-filters a {
@@ -8502,4 +8506,21 @@ h5 {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 15px;
+}
+
+#block-reports th {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#block-reports td {
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+#block-reports td a {
+  color: #ff5139;
+  font-size: 18px;
+  font-weight: 700;
 }

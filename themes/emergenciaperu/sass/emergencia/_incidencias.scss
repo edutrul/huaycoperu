@@ -1,9 +1,13 @@
 .incidencias {
     margin-top: 55px;
-    margin-bottom: 90px;
+    margin-bottom: 75px;
 
     .map, #mapStatus, .slider-holder {
         width: 100%;
+    }
+
+    .slider-holder {
+        padding-left: 0;
     }
 
     .category-filters a {
