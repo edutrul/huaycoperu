@@ -1,4 +1,13 @@
 .page-alerts {
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+        position: static;
+        left: auto;
+        opacity: 1;
+        vertical-align: middle;
+        margin-right: 3px;
+    }
+
     .big-block {
         margin-top: 55px;
 
@@ -25,6 +34,10 @@
 
     .step {
         &-1 {
+            .alert_slider {
+                margin-bottom: 40px;
+            }
+
             .map-wrapper {
                 .map-holder{
                     overflow: hidden;
@@ -42,4 +55,50 @@
             }
         }
     }
+
+    .ui-slider li span.ui-slider-label-show,
+    .ui-slider dd span.ui-slider-label-show {
+        margin-left: -10px !important;
+        text-align: center;
+    }
+
+    .report-find-location {
+        input.findtext {
+            margin-top: 10px;
+            padding: 5px;
+            height: 24px;
+            float: left;
+            font-size: 14px;
+            font-weight: bold;
+            color: #666;
+            width: 250px;
+            border: 1px #ccc solid;
+            margin-right: -6px;
+        }
+
+        input.findtext[type=text]:focus:not([readonly]) {
+            border-bottom: 1px solid #ff5139;
+            box-shadow: 0 1px 0 0 #ff5139;
+        }
+    }
+
+    .holder label {
+        position: relative;
+        display: block;
+        top: -5px;
+        left: 1px;
+    }
+
+    .text.long {
+        border: 1px #ccc solid;
+        padding: 5px;
+        margin-top: 10px;
+        height: 24px;
+
+        &[type=text]:focus:not([readonly]) {
+            border-bottom: 1px solid #ff5139;
+            box-shadow: 0 1px 0 0 #ff5139;
+        }
+    }
 }
+

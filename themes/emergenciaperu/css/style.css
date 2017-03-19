@@ -8525,6 +8525,15 @@ h5 {
   font-weight: 700;
 }
 
+.page-alerts [type="checkbox"]:not(:checked),
+.page-alerts [type="checkbox"]:checked {
+  position: static;
+  left: auto;
+  opacity: 1;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
 .page-alerts .big-block {
   margin-top: 55px;
 }
@@ -8545,6 +8554,10 @@ h5 {
   background: #9f1300;
 }
 
+.page-alerts .step-1 .alert_slider {
+  margin-bottom: 40px;
+}
+
 .page-alerts .step-1 .map-wrapper .map-holder {
   overflow: hidden;
   width: 100%;
@@ -8557,6 +8570,49 @@ h5 {
   position: absolute !important;
   top: 0 !important;
   left: 0 !important;
+}
+
+.page-alerts .ui-slider li span.ui-slider-label-show,
+.page-alerts .ui-slider dd span.ui-slider-label-show {
+  margin-left: -10px !important;
+  text-align: center;
+}
+
+.page-alerts .report-find-location input.findtext {
+  margin-top: 10px;
+  padding: 5px;
+  height: 24px;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  width: 250px;
+  border: 1px #ccc solid;
+  margin-right: -6px;
+}
+
+.page-alerts .report-find-location input.findtext[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #ff5139;
+  box-shadow: 0 1px 0 0 #ff5139;
+}
+
+.page-alerts .holder label {
+  position: relative;
+  display: block;
+  top: -5px;
+  left: 1px;
+}
+
+.page-alerts .text.long {
+  border: 1px #ccc solid;
+  padding: 5px;
+  margin-top: 10px;
+  height: 24px;
+}
+
+.page-alerts .text.long[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #ff5139;
+  box-shadow: 0 1px 0 0 #ff5139;
 }
 
 .lista-incidencias {
