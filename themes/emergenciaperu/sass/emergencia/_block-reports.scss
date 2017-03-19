@@ -1,0 +1,16 @@
+#block-reports th {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#block-reports td {
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+#block-reports td a {  
+    color: color("red", "base");
+    font-size: 18px;
+    font-weight: 700;
+}
