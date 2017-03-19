@@ -16,3 +16,4 @@
 2017-03-19 02:55:52 -05:00 --- error: Excepción no atrapada PHP Error: Non-static method html::escape() should not be called statically, assuming $this from incompatible context en el archivo C:/xampp/htdocs/huaycoperu/themes/emergenciaperu/views/header_nav.php en la línea 17
 2017-03-19 07:56:37 +00:00 --- error: Excepción no atrapada PHP Error: Declaration of Auth_User_Model::validate() should be compatible with ORM_Core::validate(Validation $array, $save = false) en el archivo C:/xampp/htdocs/huaycoperu/modules/auth/models/auth_user.php en la línea 3
 2017-03-19 03:04:05 -05:00 --- error: Excepción no atrapada PHP Error: Undefined variable: this_page en el archivo C:/xampp/htdocs/huaycoperu/themes/emergenciaperu/views/header_nav.php en la línea 7
+2017-03-19 09:31:09 -05:00 --- error: Excepción no atrapada PHP Error: Undefined variable: mtime en el archivo C:/xampp/htdocs/huaycoperu/application/controllers/media.php en la línea 94

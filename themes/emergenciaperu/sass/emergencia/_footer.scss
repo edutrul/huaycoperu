@@ -1,0 +1,42 @@
+.brindar-ayuda-section {
+    margin-top: 90px;
+    padding: 80px 0;
+    color: #fff;
+}
+
+.brindar-ayuda-section p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.brindar-ayuda-section p.heading {
+    font-weight: 300;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.brindar-ayuda-section p.heading strong {
+    font-weight: 700;
+}
+
+.brindar-ayuda-section .btn {
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: none;
+    height: 78px;
+    line-height: 78px;
+
+    &:hover {
+        background: rgba(255,255,255,0.3);
+    }
+
+    img {
+        vertical-align: middle;
+        margin-top: -8px;
+        margin-right: 10px;
+    }
+}
