@@ -7,6 +7,10 @@
 		<a href="#" class="btn btn-large">Brindar ayuda</a>
 	</div>
 
+	<div class="footer row center">
+		<p>Está página ha sido hecha colaborativamente en Hackspace Perú. <a href="#">CONTACTO</a></p>
+	</div>
+
 	<?php
 	echo $footer_block;
 	// Action::main_footer - Add items before the </body> tag
