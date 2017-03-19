@@ -8548,7 +8548,7 @@ h5 {
 }
 
 .brindar-ayuda-section .btn, .brindar-ayuda-section .btn-large {
-  background: transparent;
+  background: transparent url("../images/heart-icon-white.png") 29px center no-repeat;
   border: 1px solid #fff;
   font-size: 24px;
   font-weight: 700;
@@ -8556,10 +8556,12 @@ h5 {
   box-shadow: none;
   height: 78px;
   line-height: 78px;
+  padding-left: 90px;
 }
 
 .brindar-ayuda-section .btn:hover, .brindar-ayuda-section .btn-large:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: #fff url("../images/heart-icon-red.png") 29px center no-repeat;
+  color: #ff5139;
 }
 
 .brindar-ayuda-section .btn img, .brindar-ayuda-section .btn-large img {

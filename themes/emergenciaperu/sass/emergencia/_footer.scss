@@ -21,7 +21,7 @@
 }
 
 .brindar-ayuda-section .btn {
-    background: transparent;
+    background: transparent url('../images/heart-icon-white.png') 29px center no-repeat;
     border: 1px solid #fff;
     font-size: 24px;
     font-weight: 700;
@@ -29,9 +29,11 @@
     box-shadow: none;
     height: 78px;
     line-height: 78px;
+    padding-left: 90px;
 
     &:hover {
-        background: rgba(255,255,255,0.3);
+        background: #fff url('../images/heart-icon-red.png') 29px center no-repeat;
+        color: color("red", "base");
     }
 
     img {
