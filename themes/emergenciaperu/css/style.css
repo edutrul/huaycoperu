@@ -8525,6 +8525,30 @@ h5 {
   font-weight: 700;
 }
 
+.lista-incidencias {
+  margin-top: 65px;
+}
+
+.lista-incidencias span.badge.new:after {
+  content: "";
+}
+
+.report-stats-container {
+  padding-top: 30px;
+}
+
+#rb_list-view p, .r_description {
+  margin-bottom: 10px;
+}
+
+.link-toggle li {
+  display: inline-block;
+}
+
+.report-list-toggle li {
+  margin-right: 10px;
+}
+
 .brindar-ayuda-section {
   margin-top: 90px;
   padding: 80px 0;

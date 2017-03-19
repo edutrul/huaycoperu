@@ -171,15 +171,6 @@ ul {
 /* Reports page */
 /* Reports/Filters Layout */
 /* basic styling on reports and filters for convenience */
-#reports-box {
-    float: left;
-    width: 600px;
-}
-#filters-box {
-    float: left;
-    width: 280px;
-    margin-left: 20px;
-}
 .f-clear {
     float: right;
 }
