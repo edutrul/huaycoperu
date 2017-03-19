@@ -5653,7 +5653,14 @@ input[type=datetime-local],
 input[type=tel],
 input[type=number],
 input[type=search],
-textarea.materialize-textarea {
+textarea.materialize-textarea,
+.page-reports-submit textarea.text.long,
+.page-reports-submit #divNews .report_row textarea.text.long2,
+.page-reports-submit #divNews .second textarea.text.long2,
+.page-reports-submit #divVideo .report_row textarea.text.long2,
+.page-reports-submit #divVideo .second textarea.text.long2,
+.page-reports-submit #divPhoto .report_row textarea.text.long2,
+.page-reports-submit #divPhoto .second textarea.text.long2 {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #9e9e9e;
@@ -5693,7 +5700,21 @@ input[type=number][readonly="readonly"],
 input[type=search]:disabled,
 input[type=search][readonly="readonly"],
 textarea.materialize-textarea:disabled,
-textarea.materialize-textarea[readonly="readonly"] {
+.page-reports-submit textarea.text.long:disabled,
+.page-reports-submit #divNews .report_row textarea.text.long2:disabled,
+.page-reports-submit #divNews .second textarea.text.long2:disabled,
+.page-reports-submit #divVideo .report_row textarea.text.long2:disabled,
+.page-reports-submit #divVideo .second textarea.text.long2:disabled,
+.page-reports-submit #divPhoto .report_row textarea.text.long2:disabled,
+.page-reports-submit #divPhoto .second textarea.text.long2:disabled,
+textarea.materialize-textarea[readonly="readonly"],
+.page-reports-submit textarea[readonly="readonly"].text.long,
+.page-reports-submit #divNews .report_row textarea[readonly="readonly"].text.long2,
+.page-reports-submit #divNews .second textarea[readonly="readonly"].text.long2,
+.page-reports-submit #divVideo .report_row textarea[readonly="readonly"].text.long2,
+.page-reports-submit #divVideo .second textarea[readonly="readonly"].text.long2,
+.page-reports-submit #divPhoto .report_row textarea[readonly="readonly"].text.long2,
+.page-reports-submit #divPhoto .second textarea[readonly="readonly"].text.long2 {
   color: rgba(0, 0, 0, 0.26);
   border-bottom: 1px dotted rgba(0, 0, 0, 0.26);
 }
@@ -5722,8 +5743,18 @@ input[type=number]:disabled + label,
 input[type=number][readonly="readonly"] + label,
 input[type=search]:disabled + label,
 input[type=search][readonly="readonly"] + label,
-textarea.materialize-textarea:disabled + label,
-textarea.materialize-textarea[readonly="readonly"] + label {
+textarea.materialize-textarea:disabled + label, .page-reports-submit textarea.text.long:disabled + label, .page-reports-submit #divNews .report_row textarea.text.long2:disabled + label,
+.page-reports-submit #divNews .second textarea.text.long2:disabled + label,
+.page-reports-submit #divVideo .report_row textarea.text.long2:disabled + label,
+.page-reports-submit #divVideo .second textarea.text.long2:disabled + label,
+.page-reports-submit #divPhoto .report_row textarea.text.long2:disabled + label,
+.page-reports-submit #divPhoto .second textarea.text.long2:disabled + label,
+textarea.materialize-textarea[readonly="readonly"] + label, .page-reports-submit textarea[readonly="readonly"].text.long + label, .page-reports-submit #divNews .report_row textarea[readonly="readonly"].text.long2 + label,
+.page-reports-submit #divNews .second textarea[readonly="readonly"].text.long2 + label,
+.page-reports-submit #divVideo .report_row textarea[readonly="readonly"].text.long2 + label,
+.page-reports-submit #divVideo .second textarea[readonly="readonly"].text.long2 + label,
+.page-reports-submit #divPhoto .report_row textarea[readonly="readonly"].text.long2 + label,
+.page-reports-submit #divPhoto .second textarea[readonly="readonly"].text.long2 + label {
   color: rgba(0, 0, 0, 0.26);
 }
 
@@ -5739,7 +5770,14 @@ input[type=datetime-local]:focus:not([readonly]),
 input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
-textarea.materialize-textarea:focus:not([readonly]) {
+textarea.materialize-textarea:focus:not([readonly]),
+.page-reports-submit textarea.text.long:focus:not([readonly]),
+.page-reports-submit #divNews .report_row textarea.text.long2:focus:not([readonly]),
+.page-reports-submit #divNews .second textarea.text.long2:focus:not([readonly]),
+.page-reports-submit #divVideo .report_row textarea.text.long2:focus:not([readonly]),
+.page-reports-submit #divVideo .second textarea.text.long2:focus:not([readonly]),
+.page-reports-submit #divPhoto .report_row textarea.text.long2:focus:not([readonly]),
+.page-reports-submit #divPhoto .second textarea.text.long2:focus:not([readonly]) {
   border-bottom: 1px solid #26a69a;
   box-shadow: 0 1px 0 0 #26a69a;
 }
@@ -5756,7 +5794,12 @@ input[type=datetime-local]:focus:not([readonly]) + label,
 input[type=tel]:focus:not([readonly]) + label,
 input[type=number]:focus:not([readonly]) + label,
 input[type=search]:focus:not([readonly]) + label,
-textarea.materialize-textarea:focus:not([readonly]) + label {
+textarea.materialize-textarea:focus:not([readonly]) + label, .page-reports-submit textarea.text.long:focus:not([readonly]) + label, .page-reports-submit #divNews .report_row textarea.text.long2:focus:not([readonly]) + label,
+.page-reports-submit #divNews .second textarea.text.long2:focus:not([readonly]) + label,
+.page-reports-submit #divVideo .report_row textarea.text.long2:focus:not([readonly]) + label,
+.page-reports-submit #divVideo .second textarea.text.long2:focus:not([readonly]) + label,
+.page-reports-submit #divPhoto .report_row textarea.text.long2:focus:not([readonly]) + label,
+.page-reports-submit #divPhoto .second textarea.text.long2:focus:not([readonly]) + label {
   color: #26a69a;
 }
 
@@ -5784,7 +5827,21 @@ input[type=number]:focus.valid,
 input[type=search].valid,
 input[type=search]:focus.valid,
 textarea.materialize-textarea.valid,
-textarea.materialize-textarea:focus.valid {
+.page-reports-submit textarea.valid.text.long,
+.page-reports-submit #divNews .report_row textarea.valid.text.long2,
+.page-reports-submit #divNews .second textarea.valid.text.long2,
+.page-reports-submit #divVideo .report_row textarea.valid.text.long2,
+.page-reports-submit #divVideo .second textarea.valid.text.long2,
+.page-reports-submit #divPhoto .report_row textarea.valid.text.long2,
+.page-reports-submit #divPhoto .second textarea.valid.text.long2,
+textarea.materialize-textarea:focus.valid,
+.page-reports-submit textarea.text.long:focus.valid,
+.page-reports-submit #divNews .report_row textarea.text.long2:focus.valid,
+.page-reports-submit #divNews .second textarea.text.long2:focus.valid,
+.page-reports-submit #divVideo .report_row textarea.text.long2:focus.valid,
+.page-reports-submit #divVideo .second textarea.text.long2:focus.valid,
+.page-reports-submit #divPhoto .report_row textarea.text.long2:focus.valid,
+.page-reports-submit #divPhoto .second textarea.text.long2:focus.valid {
   border-bottom: 1px solid #4CAF50;
   box-shadow: 0 1px 0 0 #4CAF50;
 }
@@ -5813,8 +5870,18 @@ input[type=number].valid + label:after,
 input[type=number]:focus.valid + label:after,
 input[type=search].valid + label:after,
 input[type=search]:focus.valid + label:after,
-textarea.materialize-textarea.valid + label:after,
-textarea.materialize-textarea:focus.valid + label:after {
+textarea.materialize-textarea.valid + label:after, .page-reports-submit textarea.valid.text.long + label:after, .page-reports-submit #divNews .report_row textarea.valid.text.long2 + label:after,
+.page-reports-submit #divNews .second textarea.valid.text.long2 + label:after,
+.page-reports-submit #divVideo .report_row textarea.valid.text.long2 + label:after,
+.page-reports-submit #divVideo .second textarea.valid.text.long2 + label:after,
+.page-reports-submit #divPhoto .report_row textarea.valid.text.long2 + label:after,
+.page-reports-submit #divPhoto .second textarea.valid.text.long2 + label:after,
+textarea.materialize-textarea:focus.valid + label:after, .page-reports-submit textarea.text.long:focus.valid + label:after, .page-reports-submit #divNews .report_row textarea.text.long2:focus.valid + label:after,
+.page-reports-submit #divNews .second textarea.text.long2:focus.valid + label:after,
+.page-reports-submit #divVideo .report_row textarea.text.long2:focus.valid + label:after,
+.page-reports-submit #divVideo .second textarea.text.long2:focus.valid + label:after,
+.page-reports-submit #divPhoto .report_row textarea.text.long2:focus.valid + label:after,
+.page-reports-submit #divPhoto .second textarea.text.long2:focus.valid + label:after {
   content: attr(data-success);
   color: #4CAF50;
   opacity: 1;
@@ -5844,7 +5911,21 @@ input[type=number]:focus.invalid,
 input[type=search].invalid,
 input[type=search]:focus.invalid,
 textarea.materialize-textarea.invalid,
-textarea.materialize-textarea:focus.invalid {
+.page-reports-submit textarea.invalid.text.long,
+.page-reports-submit #divNews .report_row textarea.invalid.text.long2,
+.page-reports-submit #divNews .second textarea.invalid.text.long2,
+.page-reports-submit #divVideo .report_row textarea.invalid.text.long2,
+.page-reports-submit #divVideo .second textarea.invalid.text.long2,
+.page-reports-submit #divPhoto .report_row textarea.invalid.text.long2,
+.page-reports-submit #divPhoto .second textarea.invalid.text.long2,
+textarea.materialize-textarea:focus.invalid,
+.page-reports-submit textarea.text.long:focus.invalid,
+.page-reports-submit #divNews .report_row textarea.text.long2:focus.invalid,
+.page-reports-submit #divNews .second textarea.text.long2:focus.invalid,
+.page-reports-submit #divVideo .report_row textarea.text.long2:focus.invalid,
+.page-reports-submit #divVideo .second textarea.text.long2:focus.invalid,
+.page-reports-submit #divPhoto .report_row textarea.text.long2:focus.invalid,
+.page-reports-submit #divPhoto .second textarea.text.long2:focus.invalid {
   border-bottom: 1px solid #ff5139;
   box-shadow: 0 1px 0 0 #ff5139;
 }
@@ -5873,8 +5954,18 @@ input[type=number].invalid + label:after,
 input[type=number]:focus.invalid + label:after,
 input[type=search].invalid + label:after,
 input[type=search]:focus.invalid + label:after,
-textarea.materialize-textarea.invalid + label:after,
-textarea.materialize-textarea:focus.invalid + label:after {
+textarea.materialize-textarea.invalid + label:after, .page-reports-submit textarea.invalid.text.long + label:after, .page-reports-submit #divNews .report_row textarea.invalid.text.long2 + label:after,
+.page-reports-submit #divNews .second textarea.invalid.text.long2 + label:after,
+.page-reports-submit #divVideo .report_row textarea.invalid.text.long2 + label:after,
+.page-reports-submit #divVideo .second textarea.invalid.text.long2 + label:after,
+.page-reports-submit #divPhoto .report_row textarea.invalid.text.long2 + label:after,
+.page-reports-submit #divPhoto .second textarea.invalid.text.long2 + label:after,
+textarea.materialize-textarea:focus.invalid + label:after, .page-reports-submit textarea.text.long:focus.invalid + label:after, .page-reports-submit #divNews .report_row textarea.text.long2:focus.invalid + label:after,
+.page-reports-submit #divNews .second textarea.text.long2:focus.invalid + label:after,
+.page-reports-submit #divVideo .report_row textarea.text.long2:focus.invalid + label:after,
+.page-reports-submit #divVideo .second textarea.text.long2:focus.invalid + label:after,
+.page-reports-submit #divPhoto .report_row textarea.text.long2:focus.invalid + label:after,
+.page-reports-submit #divPhoto .second textarea.text.long2:focus.invalid + label:after {
   content: attr(data-error);
   color: #ff5139;
   opacity: 1;
@@ -5892,7 +5983,12 @@ input[type=datetime-local].validate + label,
 input[type=tel].validate + label,
 input[type=number].validate + label,
 input[type=search].validate + label,
-textarea.materialize-textarea.validate + label {
+textarea.materialize-textarea.validate + label, .page-reports-submit textarea.validate.text.long + label, .page-reports-submit #divNews .report_row textarea.validate.text.long2 + label,
+.page-reports-submit #divNews .second textarea.validate.text.long2 + label,
+.page-reports-submit #divVideo .report_row textarea.validate.text.long2 + label,
+.page-reports-submit #divVideo .second textarea.validate.text.long2 + label,
+.page-reports-submit #divPhoto .report_row textarea.validate.text.long2 + label,
+.page-reports-submit #divPhoto .second textarea.validate.text.long2 + label {
   width: 100%;
   pointer-events: none;
 }
@@ -5909,7 +6005,12 @@ input[type=datetime-local] + label:after,
 input[type=tel] + label:after,
 input[type=number] + label:after,
 input[type=search] + label:after,
-textarea.materialize-textarea + label:after {
+textarea.materialize-textarea + label:after, .page-reports-submit textarea.text.long + label:after, .page-reports-submit #divNews .report_row textarea.text.long2 + label:after,
+.page-reports-submit #divNews .second textarea.text.long2 + label:after,
+.page-reports-submit #divVideo .report_row textarea.text.long2 + label:after,
+.page-reports-submit #divVideo .second textarea.text.long2 + label:after,
+.page-reports-submit #divPhoto .report_row textarea.text.long2 + label:after,
+.page-reports-submit #divPhoto .second textarea.text.long2 + label:after {
   display: block;
   content: "";
   position: absolute;
@@ -6040,7 +6141,12 @@ textarea {
   background-color: transparent;
 }
 
-textarea.materialize-textarea {
+textarea.materialize-textarea, .page-reports-submit textarea.text.long, .page-reports-submit #divNews .report_row textarea.text.long2,
+.page-reports-submit #divNews .second textarea.text.long2,
+.page-reports-submit #divVideo .report_row textarea.text.long2,
+.page-reports-submit #divVideo .second textarea.text.long2,
+.page-reports-submit #divPhoto .report_row textarea.text.long2,
+.page-reports-submit #divPhoto .second textarea.text.long2 {
   overflow-y: hidden;
   /* prevents scroll bar flash */
   padding: .8rem 0 1.6rem 0;
@@ -8603,14 +8709,34 @@ h5 {
   left: 1px;
 }
 
-.page-alerts .text.long {
+.page-alerts .text.long, .page-alerts .page-reports-submit #divNews .report_row .text.long2, .page-reports-submit #divNews .report_row .page-alerts .text.long2, .page-alerts
+.page-reports-submit #divNews .second .text.long2,
+.page-reports-submit #divNews .second .page-alerts .text.long2, .page-alerts
+.page-reports-submit #divVideo .report_row .text.long2,
+.page-reports-submit #divVideo .report_row .page-alerts .text.long2, .page-alerts
+.page-reports-submit #divVideo .second .text.long2,
+.page-reports-submit #divVideo .second .page-alerts .text.long2, .page-alerts
+.page-reports-submit #divPhoto .report_row .text.long2,
+.page-reports-submit #divPhoto .report_row .page-alerts .text.long2, .page-alerts
+.page-reports-submit #divPhoto .second .text.long2,
+.page-reports-submit #divPhoto .second .page-alerts .text.long2 {
   border: 1px #ccc solid;
-  padding: 5px;
+  padding: 5px 0;
   margin-top: 10px;
   height: 24px;
 }
 
-.page-alerts .text.long[type=text]:focus:not([readonly]) {
+.page-alerts .text.long[type=text]:focus:not([readonly]), .page-alerts .page-reports-submit #divNews .report_row [type=text].text.long2:focus:not([readonly]), .page-reports-submit #divNews .report_row .page-alerts [type=text].text.long2:focus:not([readonly]), .page-alerts
+.page-reports-submit #divNews .second [type=text].text.long2:focus:not([readonly]),
+.page-reports-submit #divNews .second .page-alerts [type=text].text.long2:focus:not([readonly]), .page-alerts
+.page-reports-submit #divVideo .report_row [type=text].text.long2:focus:not([readonly]),
+.page-reports-submit #divVideo .report_row .page-alerts [type=text].text.long2:focus:not([readonly]), .page-alerts
+.page-reports-submit #divVideo .second [type=text].text.long2:focus:not([readonly]),
+.page-reports-submit #divVideo .second .page-alerts [type=text].text.long2:focus:not([readonly]), .page-alerts
+.page-reports-submit #divPhoto .report_row [type=text].text.long2:focus:not([readonly]),
+.page-reports-submit #divPhoto .report_row .page-alerts [type=text].text.long2:focus:not([readonly]), .page-alerts
+.page-reports-submit #divPhoto .second [type=text].text.long2:focus:not([readonly]),
+.page-reports-submit #divPhoto .second .page-alerts [type=text].text.long2:focus:not([readonly]) {
   border-bottom: 1px solid #ff5139;
   box-shadow: 0 1px 0 0 #ff5139;
 }
@@ -8863,6 +8989,212 @@ a.filter-button:hover {
   background-color: #E9E9E9;
   padding: 5px;
   margin: 0px 5px;
+}
+
+.page-reports-submit [type="checkbox"]:not(:checked),
+.page-reports-submit [type="checkbox"]:checked {
+  position: static;
+  left: auto;
+  opacity: 1;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.page-reports-submit .allowed-html,
+.page-reports-submit #find_text {
+  font-size: 0.8rem;
+  color: #9e9e9e;
+}
+
+.page-reports-submit .big-block {
+  margin-top: 55px;
+}
+
+.page-reports-submit .big-block h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+
+.page-reports-submit .btn_submit {
+  margin-top: 30px;
+}
+
+.page-reports-submit .olControlZoom a {
+  opacity: .8;
+  background: #ff5139;
+}
+
+.page-reports-submit .olControlZoom a:hover {
+  background: #9f1300;
+}
+
+.page-reports-submit .report_map {
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25% !important;
+  position: relative;
+}
+
+.page-reports-submit .report_map .olMapViewport {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.page-reports-submit .report_category:before, .page-reports-submit .report_category:after {
+  content: "";
+  display: table;
+}
+
+.page-reports-submit .report_category:after {
+  clear: both;
+}
+
+.page-reports-submit .report_category .category-column {
+  width: 50%;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.page-reports-submit .report_category label {
+  position: relative;
+  display: block;
+  top: -5px;
+  left: 1px;
+}
+
+.page-reports-submit .materialize-textarea, .page-reports-submit .text.long, .page-reports-submit #divNews .report_row .text.long2,
+.page-reports-submit #divNews .second .text.long2,
+.page-reports-submit #divVideo .report_row .text.long2,
+.page-reports-submit #divVideo .second .text.long2,
+.page-reports-submit #divPhoto .report_row .text.long2,
+.page-reports-submit #divPhoto .second .text.long2 {
+  border: 1px #ccc solid;
+  padding: 5px 0;
+  margin-top: 10px;
+}
+
+.page-reports-submit .materialize-textarea:focus:not([readonly]), .page-reports-submit .text.long:focus:not([readonly]), .page-reports-submit #divNews .report_row .text.long2:focus:not([readonly]),
+.page-reports-submit #divNews .second .text.long2:focus:not([readonly]),
+.page-reports-submit #divVideo .report_row .text.long2:focus:not([readonly]),
+.page-reports-submit #divVideo .second .text.long2:focus:not([readonly]),
+.page-reports-submit #divPhoto .report_row .text.long2:focus:not([readonly]),
+.page-reports-submit #divPhoto .second .text.long2:focus:not([readonly]) {
+  border-bottom: 1px solid #ff5139;
+  box-shadow: 0 1px 0 0 #ff5139;
+}
+
+.page-reports-submit .text.long, .page-reports-submit #divNews .report_row .text.long2,
+.page-reports-submit #divNews .second .text.long2,
+.page-reports-submit #divVideo .report_row .text.long2,
+.page-reports-submit #divVideo .second .text.long2,
+.page-reports-submit #divPhoto .report_row .text.long2,
+.page-reports-submit #divPhoto .second .text.long2 {
+  height: 24px;
+}
+
+.page-reports-submit .text.long[type=text]:focus:not([readonly]), .page-reports-submit #divNews .report_row [type=text].text.long2:focus:not([readonly]),
+.page-reports-submit #divNews .second [type=text].text.long2:focus:not([readonly]),
+.page-reports-submit #divVideo .report_row [type=text].text.long2:focus:not([readonly]),
+.page-reports-submit #divVideo .second [type=text].text.long2:focus:not([readonly]),
+.page-reports-submit #divPhoto .report_row [type=text].text.long2:focus:not([readonly]),
+.page-reports-submit #divPhoto .second [type=text].text.long2:focus:not([readonly]) {
+  border-bottom: 1px solid #ff5139;
+  box-shadow: 0 1px 0 0 #ff5139;
+}
+
+.page-reports-submit #divNews .report_row,
+.page-reports-submit #divNews .second,
+.page-reports-submit #divVideo .report_row,
+.page-reports-submit #divVideo .second,
+.page-reports-submit #divPhoto .report_row,
+.page-reports-submit #divPhoto .second {
+  position: relative;
+  margin: 0;
+  padding-right: 60px;
+}
+
+.page-reports-submit #divNews .report_row .add,
+.page-reports-submit #divNews .report_row .rem,
+.page-reports-submit #divNews .second .add,
+.page-reports-submit #divNews .second .rem,
+.page-reports-submit #divVideo .report_row .add,
+.page-reports-submit #divVideo .report_row .rem,
+.page-reports-submit #divVideo .second .add,
+.page-reports-submit #divVideo .second .rem,
+.page-reports-submit #divPhoto .report_row .add,
+.page-reports-submit #divPhoto .report_row .rem,
+.page-reports-submit #divPhoto .second .add,
+.page-reports-submit #divPhoto .second .rem {
+  position: absolute;
+  right: 30px;
+  bottom: 28px;
+  overflow: hidden;
+  height: 20px;
+  width: 20px;
+  font-size: 0;
+}
+
+.page-reports-submit #divNews .report_row .add:before,
+.page-reports-submit #divNews .report_row .rem:before,
+.page-reports-submit #divNews .second .add:before,
+.page-reports-submit #divNews .second .rem:before,
+.page-reports-submit #divVideo .report_row .add:before,
+.page-reports-submit #divVideo .report_row .rem:before,
+.page-reports-submit #divVideo .second .add:before,
+.page-reports-submit #divVideo .second .rem:before,
+.page-reports-submit #divPhoto .report_row .add:before,
+.page-reports-submit #divPhoto .report_row .rem:before,
+.page-reports-submit #divPhoto .second .add:before,
+.page-reports-submit #divPhoto .second .rem:before {
+  content: "+";
+  font-size: 21px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #CCC;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 17px;
+}
+
+.page-reports-submit #divNews .report_row .rem,
+.page-reports-submit #divNews .second .rem,
+.page-reports-submit #divVideo .report_row .rem,
+.page-reports-submit #divVideo .second .rem,
+.page-reports-submit #divPhoto .report_row .rem,
+.page-reports-submit #divPhoto .second .rem {
+  right: 0;
+}
+
+.page-reports-submit #divNews .report_row .rem:before,
+.page-reports-submit #divNews .second .rem:before,
+.page-reports-submit #divVideo .report_row .rem:before,
+.page-reports-submit #divVideo .second .rem:before,
+.page-reports-submit #divPhoto .report_row .rem:before,
+.page-reports-submit #divPhoto .second .rem:before {
+  content: "-";
+}
+
+.page-reports-submit input.findtext {
+  margin-top: 10px;
+  padding: 5px;
+  height: 24px;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  width: 250px;
+  border: 1px #ccc solid;
+  margin-right: -6px;
+}
+
+.page-reports-submit input.findtext[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #ff5139;
+  box-shadow: 0 1px 0 0 #ff5139;
 }
 
 .brindar-ayuda-section {
