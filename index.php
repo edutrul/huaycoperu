@@ -87,7 +87,7 @@ version_compare(PHP_VERSION, '5.2', '<') and exit('Kohana requires PHP 5.2 or ne
  * good level for error reporting.
  */
 //error_reporting(E_ALL & ~E_STRICT);
-error_reporting(E_ALL & ~E_STRICT & ~E_DEPRECIATED);
+error_reporting(E_ALL & ~E_STRICT & ~E_DEPRECATED);
 
 
 /**

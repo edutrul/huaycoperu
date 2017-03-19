@@ -1,0 +1,18 @@
+<?php defined('SYSPATH') or die('No direct script access.'); ?>
+
+2017-03-19 04:00:44 +00:00 --- error: Uncaught Kohana_Database_Exception: Unknown Exception: database.table_not_found in file C:/xampp/htdocs/huaycoperu/application/libraries/drivers/Database/Mysql.php on line 316
+2017-03-19 04:00:45 +00:00 --- error: Uncaught Kohana_Database_Exception: Unknown Exception: database.table_not_found in file C:/xampp/htdocs/huaycoperu/application/libraries/drivers/Database/Mysql.php on line 316
+2017-03-19 04:00:50 +00:00 --- error: Uncaught Kohana_Database_Exception: Unknown Exception: database.table_not_found in file C:/xampp/htdocs/huaycoperu/application/libraries/drivers/Database/Mysql.php on line 316
+2017-03-19 04:12:58 +00:00 --- error: Uncaught Kohana_Database_Exception: Unknown Exception: database.table_not_found in file C:/xampp/htdocs/huaycoperu/application/libraries/drivers/Database/Mysql.php on line 316
+2017-03-19 04:12:58 +00:00 --- error: Uncaught Kohana_Database_Exception: Unknown Exception: database.table_not_found in file C:/xampp/htdocs/huaycoperu/application/libraries/drivers/Database/Mysql.php on line 316
+2017-03-19 04:13:03 +00:00 --- error: Uncaught Kohana_Database_Exception: Unknown Exception: database.table_not_found in file C:/xampp/htdocs/huaycoperu/application/libraries/drivers/Database/Mysql.php on line 316
+2017-03-19 04:13:30 +00:00 --- error: Uncaught Kohana_Database_Exception: Unknown Exception: database.table_not_found in file C:/xampp/htdocs/huaycoperu/application/libraries/drivers/Database/Mysql.php on line 316
+2017-03-19 04:15:44 +00:00 --- error: Uncaught Kohana_Database_Exception: Unknown Exception: database.table_not_found in file C:/xampp/htdocs/huaycoperu/application/libraries/drivers/Database/Mysql.php on line 316
+2017-03-19 04:15:45 +00:00 --- error: Uncaught Kohana_Database_Exception: Unknown Exception: database.table_not_found in file C:/xampp/htdocs/huaycoperu/application/libraries/drivers/Database/Mysql.php on line 316
+2017-03-19 04:16:20 +00:00 --- error: Uncaught Kohana_Database_Exception: Unknown Exception: database.table_not_found in file C:/xampp/htdocs/huaycoperu/application/libraries/drivers/Database/Mysql.php on line 316
+2017-03-19 04:16:28 +00:00 --- error: Uncaught Kohana_Database_Exception: Unknown Exception: database.table_not_found in file C:/xampp/htdocs/huaycoperu/application/libraries/drivers/Database/Mysql.php on line 316
+2017-03-19 02:55:12 -05:00 --- error: Excepción no atrapada PHP Error: Non-static method html::escape() should not be called statically, assuming $this from incompatible context en el archivo C:/xampp/htdocs/huaycoperu/themes/emergenciaperu/views/header_nav.php en la línea 17
+2017-03-19 02:55:35 -05:00 --- error: Excepción no atrapada PHP Error: Non-static method html::escape() should not be called statically, assuming $this from incompatible context en el archivo C:/xampp/htdocs/huaycoperu/themes/emergenciaperu/views/header_nav.php en la línea 17
+2017-03-19 02:55:52 -05:00 --- error: Excepción no atrapada PHP Error: Non-static method html::escape() should not be called statically, assuming $this from incompatible context en el archivo C:/xampp/htdocs/huaycoperu/themes/emergenciaperu/views/header_nav.php en la línea 17
+2017-03-19 07:56:37 +00:00 --- error: Excepción no atrapada PHP Error: Declaration of Auth_User_Model::validate() should be compatible with ORM_Core::validate(Validation $array, $save = false) en el archivo C:/xampp/htdocs/huaycoperu/modules/auth/models/auth_user.php en la línea 3
+2017-03-19 03:04:05 -05:00 --- error: Excepción no atrapada PHP Error: Undefined variable: this_page en el archivo C:/xampp/htdocs/huaycoperu/themes/emergenciaperu/views/header_nav.php en la línea 7

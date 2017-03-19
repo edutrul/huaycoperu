@@ -1,0 +1,66 @@
+.emergencia-menu {
+  border-bottom: solid 1px #979797;
+
+    nav {
+        height: 100px;
+        line-height: 100px;
+    }
+
+    .row {
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+
+    .brand-logo img {
+        max-width: 264px;
+        margin-left: 15px;
+        vertical-align: middle;
+    }
+
+    a {
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: color("grey", "lighten-4");
+            text-decoration: none;
+            color: $navbar-font-color;
+        }
+    }
+
+    a.brand-logo:hover {
+        background-color: transparent;
+    }
+
+    a.btn {
+        background-color: #fff;
+        border: solid 1px #cccccc;
+        box-shadow: none;
+        padding-left: 14px;
+        padding-right: 14px;
+        overflow: visible;
+        color: #222224!important;
+
+        &:hover {
+            background-color: color("grey", "lighten-4");
+        }
+
+        &:before {
+            content: "#Unasolafuerza";
+            color: #ff5139;
+            position: absolute;
+            top: -31px;
+            text-transform: initial;
+            width: 100%;
+            text-align: center;
+            margin-left: -14px;
+        }
+    }
+
+    a.btn img {
+        vertical-align: middle;
+        margin-right: 5px;
+        max-height: 22px;
+    }
+}

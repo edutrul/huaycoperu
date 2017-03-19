@@ -1,0 +1,100 @@
+.incidencias {
+    margin-top: 55px;
+    margin-bottom: 90px;
+
+    .category-filters a {
+        padding: 14px;
+        display: block;
+        color: #222224;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        border: solid 1px transparent;
+
+        &:hover {
+            text-decoration: none;
+            border-radius: 5px;
+            border: solid 1px #cccccc;
+        }
+    }
+
+    .category-filters a.active {
+        border-radius: 5px;
+        border: solid 1px #cccccc;
+    }
+
+    .category-icon {
+        background: url('../images/filters/alarma1.png') no-repeat;
+        width: 21px;
+        display: inline-block;
+        vertical-align: middle;
+        height: 21px;
+        background-color: transparent !important;
+        margin-top: -9px;
+        margin-right: 7px;
+    }
+
+    #cat_1 .category-icon {
+        background: url('../images/filters/alarma2.png') no-repeat;
+    }
+
+    #cat_2 .category-icon {
+        background: url('../images/filters/alarma3.png') no-repeat;
+    }
+
+    #cat_3 .category-icon {
+        background: url('../images/filters/alarma4.png') no-repeat;
+    }
+
+    #cat_4 .category-icon {
+        background: url('../images/filters/alarma5.png') no-repeat;
+    }
+
+    #cat_5 .category-icon {
+        background: url('../images/filters/alarma6.png') no-repeat;
+    }
+
+    .how-to-report {
+        padding: 18px;
+    }
+
+    .how-to-report h5 {
+        font-size: 14px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+
+    .how-to-report-methods div {
+        margin-bottom: 16px;
+        padding-left: 22px;
+    }
+
+    .how-to-report-methods .web-form {
+        background: url('../images/location.png') no-repeat;
+    }
+
+    .how-to-report-methods .web-form a {
+        font-weight: 700;
+        color: color("red", "base");
+    }
+
+    .how-to-report-methods .twitter {
+        background: url('../images/twitter.png') no-repeat;
+    }
+    
+    .how-to-report-methods .twitter span {
+        color: color("red", "base");
+        font-weight: 700;
+    }
+
+}
+
+.cat-filters strong {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+
