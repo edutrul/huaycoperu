@@ -3186,10 +3186,6 @@ td, th {
 /*******************
   Utility Classes
 *******************/
-.hide {
-  display: none !important;
-}
-
 .left-align {
   text-align: left;
 }
