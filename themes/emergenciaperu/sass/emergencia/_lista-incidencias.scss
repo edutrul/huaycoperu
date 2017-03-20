@@ -129,3 +129,67 @@ a.filter-button:hover { text-decoration:none; background:#707070;  }
     padding:5px;
     margin:0px 5px;
 }
+
+
+.ui-accordion .ui-accordion-header{
+    border: 0;
+    background: none;
+    font-size: 16px;
+    color: #FF5139;
+}
+#accordion .ui-state-active a.f-title{
+      color: #3E3E3E;
+}
+#accordion .ui-accordion .ui-accordion-header a{
+    padding: 0.5em 2.2em 0.5em 0.5em;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FF5139;
+}
+#accordion .ui-accordion-header .small-link-button{
+  color: #6b6969;
+  font-size: 12px;
+      padding-top: 8px;
+}
+#accordion .ui-accordion .ui-accordion-content{
+    padding: 0 8px 18px 8px;
+    font-size: 11px;
+    background: none;
+    border-radius: 0;
+    padding-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+#accordion ul.filter-list{
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+#accordion ul.filter-list li a{
+  padding: 2px 0 3px 11px;
+}
+
+
+@media (max-width: 580px) {
+    #reports-box {
+        tr {
+            td {
+                width: 100%;
+                display: block;
+                &:nth-child(3) {
+                    width: 50%;
+                    float: left;
+                }
+
+                &:last-child {
+                    width: 50%;
+                    float: right;
+                    ul {
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -73,7 +73,7 @@
 
                   <ul id="mobile-demo" class="close">
                     <?php nav::main_tabs($this_page, ['contact']); ?>
-                    <li><a href="<?php echo url::site(); ?>voluntarios" class="waves-effect waves-light btn grey-text"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA</a></li>
+                    <li><a href="<?php echo url::site(); ?>voluntarios" class="waves-effect waves-light btn grey-text"><img class="heart-menu-desktop" src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png"><img class="heart-menu-mobile" src="<?php echo url::file_loc('img'); ?>media/img/heart-icon-white.png">BRINDAR AYUDA</a></li>
                   </ul>
 
                 </div>
