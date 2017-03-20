@@ -45,6 +45,7 @@ role: member (Acceso al perfil del usuario)
 - Edwin (edwin245)
 - Renzo Telenta
 - Patricia Mejia
+- Fernando Balta
 
 Ushahidi Platform
 =================
