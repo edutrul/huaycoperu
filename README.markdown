@@ -38,7 +38,7 @@ role: member (Acceso al perfil del usuario)
 - Edwin Junior Deza
 - Elvis Rivera
 - Claudia Márquez
-- Laura Marques
+- Laura Márquez
 - David Vilca
 - Alvaro Concha
 - Cristhian Huertos
