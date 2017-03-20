@@ -37,7 +37,7 @@ role: member (Acceso al perfil del usuario)
 - Eduardo Telaya
 - Edwin Junior Deza
 - Elvis Rivera
-- Claudia Marques
+- Claudia Márquez
 - Laura Marques
 - David Vilca
 - Alvaro Concha
