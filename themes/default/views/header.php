@@ -6,7 +6,7 @@
     <!-- @TODO: 1) Update to translate function -->
     <!-- @TODO: 2) values should come dynamically to update in specific pages -->
     <!-- for Google -->
-    <meta name="description" content="Emergencia Perú es un sitio web para reportar incidentes actuales para que así otras personas esten al tanto y puedan saber en que parte del país hay accidentes, lluvia, huayco, puerto, carreteras bloqueadas y poder tomar medidas de acción apartir de estos." />
+    <meta name="description" content="Emergencia Perú es un sitio web para reportar incidentes actuales para así otras personas esten al tanto y puedan saber en que parte del país hay accidentes, lluvia, huayco, puerto, carreteras bloqueadas y poder tomar medidas de acción apartir de estos." />
     <meta name="keywords" content="emergencia Perú, huaycos peru, huaycos, huaycoperu, FuerzaPerú, UnidosXPiura, UnaSolaFuerza" />
 
     <meta name="author" content="Hackspace, DevsTec, Fedex, Hackathon Lovers Latam, Hackathons en Perú, Desarrolladores Peruanos" />
@@ -14,16 +14,16 @@
     <meta name="application-name" content="Emergencia Perú" />
 
     <!-- for Facebook -->
-    <meta property="og:title" content="Emergencia Perú es un sitio web para reportar incidentes actuales para que así tomar acciones #emergenciaPeru" />
+    <meta property="og:title" content="Emergencia Perú es un sitio web para reportar incidentes actuales para así tomar acciones #emergenciaPeru" />
     <meta property="og:type" content="article" />
     <meta property="og:image" content="/media/img/emergenciaperu-hashtag.png" />
     <meta property="og:url" content="http://emergenciaperu.com" />
-    <meta property="og:description" content="Emergencia Perú es un sitio web para reportar incidentes actuales para que así otras personas esten al tanto y puedan saber en que parte del país hay accidentes, lluvia, huayco, puerto, carreteras bloqueadas y poder tomar medidas de acción apartir de estos." />
+    <meta property="og:description" content="Emergencia Perú es un sitio web para reportar incidentes actuales para así otras personas esten al tanto y puedan saber en que parte del país hay accidentes, lluvia, huayco, puerto, carreteras bloqueadas y poder tomar medidas de acción apartir de estos." />
 
     <!-- for Twitter -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Emergencia Perú es un sitio web para reportar incidentes actuales para que así tomar acciones #emergenciaPeru" />
-    <meta name="twitter:description" content="Emergencia Perú es un sitio web para reportar incidentes actuales para que así otras personas esten al tanto y puedan saber en que parte del país hay accidentes, lluvia, huayco, puerto, carreteras bloqueadas y poder tomar medidas de acción apartir de estos." />
+    <meta name="twitter:title" content="Emergencia Perú es un sitio web para reportar incidentes actuales para así tomar acciones #emergenciaPeru" />
+    <meta name="twitter:description" content="Emergencia Perú es un sitio web para reportar incidentes actuales para así otras personas esten al tanto y puedan saber en que parte del país hay accidentes, lluvia, huayco, puerto, carreteras bloqueadas y poder tomar medidas de acción apartir de estos." />
     <meta name="twitter:image" content="/media/img/emergenciaperu-hashtag.png" />
 	<?php echo $header_block; ?>
 	<?php
