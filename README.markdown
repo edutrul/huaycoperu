@@ -43,6 +43,8 @@ role: member (Acceso al perfil del usuario)
 - Alvaro Concha
 - Cristhian Huertos
 - Edwin (edwin245)
+- Renzo Telenta
+- Patricia Mejia
 
 Ushahidi Platform
 =================
