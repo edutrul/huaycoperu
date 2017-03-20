@@ -9313,7 +9313,7 @@ a.filter-button:hover {
 }
 
 .ayuda-incidencia form {
-  max-width: 245px;
+  max-width: 290px;
   margin: 0 auto;
 }
 
@@ -9368,16 +9368,13 @@ a.filter-button:hover {
   margin: 15px 0 50px 0;
 }
 
-[type="radio"]:not(:checked) + label:before, [type="radio"]:not(:checked) + label:after {
+[type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:not(:checked) + label:after {
   border: 1px solid #cccccc;
 }
 
-[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after {
-  border: 1px solid #cccccc;
-}
-
-[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:after {
-  background-color: #ff5139;
+[type="checkbox"]:checked + label:before {
+  border-right: 2px solid #ff5139;
+  border-bottom: 2px solid #ff5139;
 }
 
 .brindar-ayuda-section {

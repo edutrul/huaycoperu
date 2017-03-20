@@ -7,23 +7,27 @@
       <h4>Informa si estás en una zona con una situación de emergencia o que necesita apoyo.</h4>
       <form action="#">
 				<p>
-				  <input class="with-gap" name="group3" type="radio" id="test1" checked />
-				  <label for="test1">Falta de comida, agua u hogar</label>
+				  <input class="with-gap red" name="group3" type="checkbox" id="test1" />
+				  <label for="test1">Accidentes, muertes, desaparecidos</label>
 				</p>
 				<p>
-				  <input class="with-gap" name="group3" type="radio" id="test2" checked />
+				  <input class="with-gap red" name="group3" type="checkbox" id="test2" />
 				  <label for="test2">Huayco, inundación, lluvia</label>
 				</p>
 				<p>
-				  <input class="with-gap" name="group3" type="radio" id="test3" checked />
+				  <input class="with-gap red" name="group3" type="checkbox" id="test3" />
 				  <label for="test3">Carretera o puerto bloqueado</label>
 				</p>
 				<p>
-				  <input class="with-gap" name="group3" type="radio" id="test4" checked />
-				  <label for="test4">Personas o animales en peligro</label>
+				  <input class="with-gap red" name="group3" type="checkbox" id="test4" />
+				  <label for="test4">Falta de comida, agua o ropa</label>
 				</p>
 				<p>
-				  <input class="with-gap" name="group3" type="radio" id="test5" checked />
+				  <input class="with-gap red" name="group3" type="checkbox" id="test7" />
+				  <label for="test7">Damnificados sin hogar</label>
+				</p>
+				<p>
+				  <input class="with-gap red" name="group3" type="checkbox" id="test5" />
 				  <label for="test5">Otros</label>
 				</p>
       </form>
