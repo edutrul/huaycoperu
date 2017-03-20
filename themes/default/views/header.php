@@ -16,7 +16,7 @@
     <!-- for Facebook -->
     <meta property="og:title" content="Emergencia Perú es un sitio web para reportar incidentes actuales para que así tomar acciones #emergenciaPeru" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="/media/img/emergenciaperu.png" />
+    <meta property="og:image" content="/media/img/emergenciaperu-hashtag.png" />
     <meta property="og:url" content="http://emergenciaperu.com" />
     <meta property="og:description" content="Emergencia Perú es un sitio web para reportar incidentes actuales para que así otras personas esten al tanto y puedan saber en que parte del país hay accidentes, lluvia, huayco, puerto, carreteras bloqueadas y poder tomar medidas de acción apartir de estos." />
 
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Emergencia Perú es un sitio web para reportar incidentes actuales para que así tomar acciones #emergenciaPeru" />
     <meta name="twitter:description" content="Emergencia Perú es un sitio web para reportar incidentes actuales para que así otras personas esten al tanto y puedan saber en que parte del país hay accidentes, lluvia, huayco, puerto, carreteras bloqueadas y poder tomar medidas de acción apartir de estos." />
-    <meta name="twitter:image" content="/media/img/emergenciaperu.png" />
+    <meta name="twitter:image" content="/media/img/emergenciaperu-hashtag.png" />
 	<?php echo $header_block; ?>
 	<?php
 	// Action::header_scripts - Additional Inline Scripts from Plugins
