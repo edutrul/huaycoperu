@@ -8,7 +8,28 @@
 	</div>
 
 	<div class="footer row center">
-		<p>Está página ha sido hecha colaborativamente en Hackspace Perú. <a href="https://www.facebook.com/HackSpacePeru" target="_blank">CONTACTO</a></p>
+		<a href="https://www.facebook.com/groups/emergenciaperu/" target="_blank" style="
+    padding: 5px;
+"><img src="http://www.emergenciaperu.com/themes/emergenciaperu/images/icons/facebook-4-48.png" alt="Grupo de Facebook" style="
+    height: 48px;
+    width: 48px;
+"></a>
+		<a href="https://github.com/edutrul/huaycoperu" target="_blank" style="
+    padding: 5px;
+"><img src="http://www.emergenciaperu.com/themes/emergenciaperu/images/icons/github-10-48.png" alt="Github del proyecto" style="
+    height: 48px;
+    width: 48px;
+"></a>
+		<a href="https://twitter.com/search?f=tweets&q=%23UnaSolaFuerza&src=typd" target="_blank" style="
+    padding: 5px;
+"><img src="http://www.emergenciaperu.com/themes/emergenciaperu/images/icons/twitter-4-48.png" alt="# Oficial" style="
+    height: 48px;
+    width: 48px;
+"></a>
+
+	<?php if ($site_copyright_statement != ''): ?>
+  		<p><?php echo $site_copyright_statement; ?></p>
+      	<?php endif; ?>
 	</div>
 
 	<?php
