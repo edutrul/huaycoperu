@@ -9562,7 +9562,7 @@ a.filter-button:hover {
   font-weight: 600;
 }
 
-.ayuda-incidencia a {
+.ayuda-incidencia button {
   text-decoration: none;
   color: white;
   background: #FF5139;
@@ -9572,7 +9572,7 @@ a.filter-button:hover {
   display: inline-block;
   position: relative;
   top: 0px;
-  font-size: 24px;
+  font-size: 21px;
   border-radius: 10px;
   font-weight: 600;
   box-shadow: 0px 5px 0px 0px #9D3121, 0px 0px 20px 0px transparent;
@@ -9580,17 +9580,17 @@ a.filter-button:hover {
 }
 
 @media (min-width: 480px) {
-  .ayuda-incidencia a {
+  .ayuda-incidencia button {
     padding: 15px 39px 14px 39px;
   }
 }
 
-.ayuda-incidencia a:hover {
+.ayuda-incidencia button:hover {
   background: #FF5139;
   box-shadow: 0px 5px 0px 0px #9D3121, 0px 0px 20px 0px transparent;
 }
 
-.ayuda-incidencia a:active {
+.ayuda-incidencia button:active {
   top: 5px;
   box-shadow: 0px 5px 0px 0px #9D3121, 0px 0px 20px 0px transparent;
 }

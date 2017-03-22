@@ -31,7 +31,7 @@
 			<?php endif; ?>
 			<div class="row">
 				<input type="hidden" name="form_id" id="form_id" value="<?php echo $id?>">
-			
+
 				<div class="report_left col m6">
 					<div class="report_row">
 						<?php if(count($forms) > 1): ?>
@@ -56,7 +56,7 @@
 					<div class="report_row" id="datetime_default">
 						<h4>
 							<a href="#" id="date_toggle" class="show-more"><?php echo Kohana::lang('ui_main.modify_date'); ?></a>
-							<?php echo Kohana::lang('ui_main.date_time'); ?>: 
+							<?php echo Kohana::lang('ui_main.date_time'); ?>:
 							<?php echo Kohana::lang('ui_main.today_at')." "."<span id='current_time'>".$form['incident_hour']
 								.":".$form['incident_minute']." ".$form['incident_ampm']."</span>"; ?>
 							<?php if($site_timezone): ?>
@@ -70,10 +70,10 @@
 							<?php print form::input('incident_date', $form['incident_date'], ' class="text short"'); ?>
 							<script type="text/javascript">
 								$().ready(function() {
-									$("#incident_date").datepicker({ 
-										showOn: "both", 
-										buttonImage: "<?php echo url::file_loc('img'); ?>media/img/icon-calendar.gif", 
-										buttonImageOnly: true 
+									$("#incident_date").datepicker({
+										showOn: "both",
+										buttonImage: "<?php echo url::file_loc('img'); ?>media/img/icon-calendar.gif",
+										buttonImageOnly: true
 									});
 								});
 							</script>
@@ -115,8 +115,8 @@
 							$selected_categories = (!empty($form['incident_category']) AND is_array($form['incident_category']))
 								? $selected_categories = $form['incident_category']
 								: array();
-								
-							
+							// Get default selected categories from URL.
+                            $selected_categories = !empty($_GET['incident-categories']) ? $_GET['incident-categories'] : $selected_categories;
 							echo category::form_tree('incident_category', $selected_categories, 2);
 							?>
 						</div>
@@ -163,29 +163,29 @@
 								<div id="geometryLabeler">
 									<div id="geometryLabelComment">
 										<span id="geometryLabel">
-											<label><?php echo Kohana::lang('ui_main.geometry_label');?>:</label> 
+											<label><?php echo Kohana::lang('ui_main.geometry_label');?>:</label>
 											<?php print form::input('geometry_label', '', ' class="lbl_text"'); ?>
 										</span>
 										<span id="geometryComment">
-											<label><?php echo Kohana::lang('ui_main.geometry_comments');?>:</label> 
+											<label><?php echo Kohana::lang('ui_main.geometry_comments');?>:</label>
 											<?php print form::input('geometry_comment', '', ' class="lbl_text2"'); ?>
 										</span>
 									</div>
 									<div>
 										<span id="geometryColor">
-											<label><?php echo Kohana::lang('ui_main.geometry_color');?>:</label> 
+											<label><?php echo Kohana::lang('ui_main.geometry_color');?>:</label>
 											<?php print form::input('geometry_color', '', ' class="lbl_text"'); ?>
 										</span>
 										<span id="geometryStrokewidth">
-											<label><?php echo Kohana::lang('ui_main.geometry_strokewidth');?>:</label> 
+											<label><?php echo Kohana::lang('ui_main.geometry_strokewidth');?>:</label>
 											<?php print form::dropdown('geometry_strokewidth', $stroke_width_array, ''); ?>
 										</span>
 										<span id="geometryLat">
-											<label><?php echo Kohana::lang('ui_main.latitude');?>:</label> 
+											<label><?php echo Kohana::lang('ui_main.latitude');?>:</label>
 											<?php print form::input('geometry_lat', '', ' class="lbl_text"'); ?>
 										</span>
 										<span id="geometryLon">
-											<label><?php echo Kohana::lang('ui_main.longitude');?>:</label> 
+											<label><?php echo Kohana::lang('ui_main.longitude');?>:</label>
 											<?php print form::input('geometry_lon', '', ' class="lbl_text"'); ?>
 										</span>
 									</div>
@@ -212,7 +212,7 @@
 					<?php Event::run('ushahidi_action.report_form_location', $id); ?>
 					<div class="report_row">
 						<h4>
-							<?php echo Kohana::lang('ui_main.reports_location_name'); ?> 
+							<?php echo Kohana::lang('ui_main.reports_location_name'); ?>
 							<span class="required">*</span><br />
 							<span class="example"><?php echo Kohana::lang('ui_main.detailed_location_example'); ?></span>
 						</h4>
@@ -222,8 +222,8 @@
 					<!-- News Fields -->
 					<div id="divNews" class="report_row">
 						<h4><?php echo Kohana::lang('ui_main.reports_news'); ?></h4>
-						
-						<?php 
+
+						<?php
 							// Initialize the counter
 							$i = (empty($form['incident_news'])) ? 1 : 0;
 						?>
@@ -257,7 +257,7 @@
 					<!-- Video Fields -->
 					<div id="divVideo" class="report_row">
 						<h4><?php print Kohana::lang('ui_main.external_video_link'); ?></h4>
-						<?php 
+						<?php
 							// Initialize the counter
 							$i = (empty($form['incident_video'])) ? 1 : 0;
 						?>
@@ -281,20 +281,20 @@
 
 								</div>
 								<?php $i++; ?>
-							
+
 							<?php endforeach; ?>
 						<?php endif; ?>
 
 						<?php print form::input(array('name'=>'video_id','type'=>'hidden','id'=>'video_id'), $i); ?>
 					</div>
-					
+
 					<?php Event::run('ushahidi_action.report_form_after_video_link'); ?>
 
 					<!-- Photo Fields -->
 					<div id="divPhoto" class="report_row">
 						<h4><?php echo Kohana::lang('ui_main.reports_photos'); ?></h4>
 						<span class="allowed-html"><?php echo Kohana::lang('ui_main.maximum_filesize'),": ", Kohana::config('settings.max_upload_size'), "Mb"; ?></span>
-						<?php 
+						<?php
 							// Initialize the counter
 							$i = (empty($form['incident_photo']['name'][0])) ? 1 : 0;
 						?>
@@ -325,9 +325,9 @@
 
 						<?php print form::input(array('name'=>'photo_id','type'=>'hidden','id'=>'photo_id'), $i); ?>
 					</div>
-										
+
 					<div class="report_row">
-						<input name="submit" type="submit" value="<?php echo Kohana::lang('ui_main.reports_btn_submit'); ?>" class="btn_submit btn red" /> 
+						<input name="submit" type="submit" value="<?php echo Kohana::lang('ui_main.reports_btn_submit'); ?>" class="btn_submit btn red" />
 					</div>
 				</div>
 			</div>
