@@ -106,7 +106,7 @@ class nav_Core {
 		foreach( $menu_items as $item )
 		{
 			$active = ($this_page == $item['page']) ? ' class="active"' : '';
-			echo '<li><a href="'.$item['url'].'"'.$active.'>'.$item['name'].'</a></li>';
+			echo '<li><a class="main-nav__link" href="'.$item['url'].'"'.$active.'>'.$item['name'].'</a></li>';
 		}
 
 		// Action::nav_admin_reports - Add items to the admin reports navigation tabs

@@ -8480,7 +8480,7 @@ h5 {
 }
 
 .emergencia-menu a:hover {
-  background-color: #f6f3f3;
+  background-color: transparent;
   text-decoration: none;
   color: #222224;
 }
@@ -8520,16 +8520,28 @@ h5 {
   max-height: 22px;
 }
 
+.emergencia-menu ul li {
+  padding: 0 8px;
+}
+
+.emergencia-menu ul li a {
+  padding: 0 0;
+}
+
 .emergencia-menu ul li:last-child a {
   margin-right: 0;
+}
+
+.emergencia-menu .main-nav {
+  position: relative;
 }
 
 .emergencia-menu .main-nav__line {
   display: none;
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 0;
-  background: #00BFE1;
+  background: #ff5139;
   height: 2px;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -8659,7 +8671,7 @@ h5 {
     border: 0;
     outline: 0;
     padding: 0 0 0 0;
-    margin: 26px 0px 48px 20px;
+    margin: 28px 0px 48px 20px;
   }
   .emergencia-menu .button-collapse:hover {
     background: white;
@@ -8667,9 +8679,9 @@ h5 {
   .emergencia-menu .button-collapse .main-nav__button__icon {
     display: block;
     position: absolute;
-    height: 5px;
+    height: 4px;
     width: 100%;
-    background: black;
+    background: rgba(0, 0, 0, 0.87);
     opacity: 1;
     right: 0;
     -webkit-transform: rotate(0deg);
@@ -8682,15 +8694,15 @@ h5 {
   }
   .emergencia-menu .button-collapse .main-nav__button__icon:nth-child(2) {
     top: 10px;
-    width: 70%;
+    width: 100%;
   }
   .emergencia-menu .button-collapse .main-nav__button__icon:nth-child(3) {
     top: 10px;
-    width: 70%;
+    width: 100%;
   }
   .emergencia-menu .button-collapse .main-nav__button__icon:nth-child(4) {
     top: 20px;
-    width: 90%;
+    width: 100%;
   }
   .emergencia-menu .main-nav__button--open .main-nav__button__icon:nth-child(1) {
     top: 10px;
@@ -8712,11 +8724,14 @@ h5 {
     width: 0%;
     right: 50%;
   }
+  #mobile-demo li {
+    padding: 0 0;
+  }
   #mobile-demo li a {
     padding: 0 15px;
     transition: background-color .0s;
   }
-  #mobile-demo li a:hover {
+  #mobile-demo li a:hover, #mobile-demo li a:active, #mobile-demo li a:focus {
     background: #ff5139;
     background-color: #ff5139;
     color: white !important;
@@ -9656,14 +9671,19 @@ a.filter-button:hover {
   margin-right: 10px;
 }
 
-.footer p {
-  margin: 34px 0 0 0;
-  font-size: 14px;
-  color: #666666;
+.footer-redes-sociales a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 8px;
+  opacity: 1;
 }
 
-.footer p a {
-  color: #666666;
-  font-weight: 700;
-  text-decoration: underline;
+.footer-redes-sociales a:hover {
+  opacity: 0.8;
+}
+
+.footer-redes-sociales a img {
+  width: 100%;
 }
