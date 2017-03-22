@@ -67,7 +67,9 @@ Click Guardar Inciencia
 Van a la página principal emergenciaperu.com y deberian de ver su incidencia reportada gracias al tweet
 --
 fin de los pasos
-Pasos para crear tareas/issues/bugs en trello
+
+# Pasos para crear tareas/issues/bugs en trello
+
 toda tarea debe tener un título (inicia con un verbo)
 al realizar click en la cartilla de trello debe tener la siguiente estructura:
 
@@ -79,19 +81,19 @@ Implementación
 {{ opcional: es como implementar esta solución
 agregar implementación es buen para que otro Developer(sea backend/frontend) pueda leerlo y ejecutar }}
 
-Pasos para probar
+# Pasos para probar
 {{ son los pasos para verificar que esta tarea este completa y funcional - tener descrito esto nos ayudara para que otra persona pueda revisar si esta tarea esta terminada o no(o determinar los siguientes pasos }}
 
-Correo
+# Correo
 https://mail.zoho.com
 User: contacto@emergenciaperu.com
 Pass: emergenciaperu2017
 
-Significado de ETIQUETAS en trello
-(colores) a las tareas de front
-(amarillo), back
-(celeste) y
-contenidos (naranja)
+# Significado de ETIQUETAS en trello
+- (colores) a las tareas de front
+- (amarillo), back
+- (celeste) y
+- contenidos (naranja)
 
 Ushahidi Platform
 =================
