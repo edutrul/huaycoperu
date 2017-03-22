@@ -44,6 +44,52 @@ role: member (Acceso al perfil del usuario)
 - Cristhian Huertos
 - Edwin (edwin245)
 
+
+Pasos para revisar los tweets de usuarios que usaron los hashtags "huaycoperu, FuerzaPerú, UnidosXPiura, UnaSolaFuerza" y apartir de ellos con un solo click (los pueden convertir en incidencias)
+Loguearse como administrador en
+http://emergenciaperu.com/login
+user: superadmin@example.com
+contraseña: superadmin
+
+Ir a http://emergenciaperu.com/admin/messages/index/3
+y veran aprox más de 7000 tweets!!
+
+Determinar si un tweet es una incidencia
+
+En cada registro de tweet veran un enlace "Crear incidencia?" (hacer click)
+Les llevara a una página para crear incidencia donde el tweet aparecera en el campo descripción (si el tweet tiene una dirección entonces manualmente copian y pegan la dirección en la casilla del mapa. además si el tweet pertenece a una categoria entonces marcar la categoría
+
+Click Guardar Inciencia
+
+Van a la página principal emergenciaperu.com y deberian de ver su incidencia reportada gracias al tweet
+--
+fin de los pasos
+Pasos para crear tareas/issues/bugs en trello
+toda tarea debe tener un título (inicia con un verbo)
+al realizar click en la cartilla de trello debe tener la siguiente estructura:
+
+Descripción
+{{ La descripción
+y sus respectivos pasos para reproducir o nuevo requerimiento a implementar(si paso a paso)
+}}
+Implementación
+{{ opcional: es como implementar esta solución
+agregar implementación es buen para que otro Developer(sea backend/frontend) pueda leerlo y ejecutar }}
+
+Pasos para probar
+{{ son los pasos para verificar que esta tarea este completa y funcional - tener descrito esto nos ayudara para que otra persona pueda revisar si esta tarea esta terminada o no(o determinar los siguientes pasos }}
+
+Correo
+https://mail.zoho.com
+User: contacto@emergenciaperu.com
+Pass: emergenciaperu2017
+
+Significado de ETIQUETAS en trello
+(colores) a las tareas de front
+(amarillo), back
+(celeste) y
+contenidos (naranja)
+
 Ushahidi Platform
 =================
 The Ushahidi Platform is an open source web application for information collection, vizualisation and interactive 
