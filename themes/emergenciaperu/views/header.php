@@ -68,7 +68,8 @@
                   <a href="<?php echo url::site(); ?>" class="brand-logo"><img src="<?php echo url::file_loc('img'); ?>media/img/logo.png" /></a>
                   <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <?php nav::main_tabs($this_page, ['home','contact']); ?>
-                    <li><a href="http://voluntariado.emergenciaperu.com/" class="waves-effect waves-light btn grey-text" target="_blank"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA</a></li>
+                    <li><a href="http://voluntariado.emergenciaperu.com/" class="waves-effect waves-light btn grey-text" target="_blank"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA <p>#SMS 993286846</p>
+</a></li>
                   </ul>
 
                   <ul id="mobile-demo" class="close">
