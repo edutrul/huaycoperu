@@ -37,12 +37,15 @@ role: member (Acceso al perfil del usuario)
 - Eduardo Telaya
 - Edwin Junior Deza
 - Elvis Rivera
-- Claudia Marques
-- Laura Marques
+- Claudia Márquez
+- Laura Márquez
 - David Vilca
 - Alvaro Concha
 - Cristhian Huertos
 - Edwin (edwin245)
+- Renzo Telenta
+- Patricia Mejia
+- Fernando Balta
 
 
 Pasos para revisar los tweets de usuarios que usaron los hashtags "huaycoperu, FuerzaPerú, UnidosXPiura, UnaSolaFuerza" y apartir de ellos con un solo click (los pueden convertir en incidencias)

@@ -62,18 +62,24 @@
         <div class="container">
             <nav class="white row">
                 <div class="nav-wrapper col s12">
-                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse">
+                    <span class="main-nav__button__icon"></span>
+                    <span class="main-nav__button__icon"></span>
+                    <span class="main-nav__button__icon"></span>
+                    <span class="main-nav__button__icon"></span>
+                  </a>
                   <a href="#" class="brand-logo"><img src="<?php echo url::file_loc('img'); ?>media/img/logo.png" /></a>
 
                   <a href="<?php echo url::site(); ?>" class="brand-logo"><img src="<?php echo url::file_loc('img'); ?>media/img/logo.png" /></a>
+                  <div class="main-nav__line"></div>
                   <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <?php nav::main_tabs($this_page, ['home','contact']); ?>
-                    <li><a href="<?php echo url::site(); ?>voluntarios" class="waves-effect waves-light btn grey-text" target="_blank"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA</a></li>
+                    <li><a href="http://voluntariado.emergenciaperu.com/" class="waves-effect waves-light btn grey-text" target="_blank"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA</a></li>
                   </ul>
 
                   <ul id="mobile-demo" class="close">
                     <?php nav::main_tabs($this_page, ['contact']); ?>
-                    <li><a href="<?php echo url::site(); ?>voluntarios" class="waves-effect waves-light btn grey-text"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA</a></li>
+                    <li><a href="<?php echo url::site(); ?>voluntarios" class="waves-effect waves-light btn grey-text"><img class="heart-menu-desktop" src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png"><img class="heart-menu-mobile" src="<?php echo url::file_loc('img'); ?>media/img/heart-icon-white.png">BRINDAR AYUDA</a></li>
                   </ul>
 
                 </div>

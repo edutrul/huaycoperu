@@ -7,24 +7,24 @@
     }
 
     .slider-holder {
-        padding-left: 0;
+      padding-left: 0;
     }
 
     .category-filters a {
-        padding: 14px;
-        display: block;
-        color: #222224;
-        font-size: 14px;
-        font-weight: 700;
-        margin-bottom: 5px;
-        border: solid 1px transparent;
+			padding: 14px;
+			display: block;
+			color: #222224;
+			font-size: 14px;
+			font-weight: 700;
+			margin-bottom: 5px;
+			border: solid 1px transparent;
 
-        &:hover {
-            text-decoration: none;
-            border-radius: 5px;
-            border: solid 1px #cccccc;
-        }
-    }
+			&:hover {
+			    text-decoration: none;
+			    border-radius: 5px;
+			    border: solid 1px #cccccc;
+			}
+			}
 
     .category-filters a.active {
         border-radius: 5px;
@@ -106,3 +106,8 @@
 }
 
 
+@media (max-width: 600px) {
+	.slider-holder {
+		margin: 0 0 70px 0;
+	}
+}
