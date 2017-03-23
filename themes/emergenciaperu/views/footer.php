@@ -46,13 +46,22 @@
 			});
 		};
 
+		lineAnimation(".main-nav__link--active");
+
 
         $(".main-nav__link").hover(
 			function () {
 			    lineAnimation(this);
 			},
 			function() {
-			   lineAnimation(".main-nav__link--active");
+				if ( $(".main-nav__link--active").length) {
+			   		lineAnimation(".main-nav__link--active");
+			   } else{
+			   		$(".main-nav__line").css({
+						left: 0,
+						width: 0	
+					});
+			   }
 			}
 	    );
 

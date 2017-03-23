@@ -48,7 +48,7 @@
 <div class="row incidencias">
 
 		<!-- content column -->
-		<div class="col m9">
+		<div class="col m8">
 				<?php								
 				// Map and Timeline Blocks
 				echo $div_map;
@@ -58,7 +58,7 @@
 		<!-- / content column -->
 
 		<!-- right column -->
-		<div class="col m3">
+		<div class="col m4">
 
 			<h5>Incidencias reportadas</h5>
 			

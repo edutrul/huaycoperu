@@ -103,13 +103,13 @@
 					<div class="card-content">
 						<h3><a class="r_title" href="<?php echo $incident_url; ?>">
 								<?php echo html::escape($incident_title); ?>
-							</a>
-							<a href="<?php echo "$incident_url#discussion"; ?>" class="r_comments"> <i class="material-icons tiny">chat_bubble</i>
-								<?php echo $comment_count; ?></a> 
+							</a> 
 								<?php echo $incident_verified; ?>
 							</h3>
 
 						<p class="r_date r-3 bottom-cap"><i class="material-icons tiny">query_builder</i> <?php echo $incident_date; ?></p>
+						<a href="<?php echo "$incident_url#discussion"; ?>" class="r_comments"> <i class="material-icons tiny">chat_bubble</i>
+								<?php echo $comment_count; ?></a>
 						<div class="r_description"> <?php echo $incident_description; ?>  
 						  <a class="btn-show btn-more" href="#incident_<?php echo $incident_id ?>"><?php echo Kohana::lang('ui_main.more_information'); ?> &raquo;</a> 
 						  <a class="btn-show btn-less" href="#incident_<?php echo $incident_id ?>">&laquo; <?php echo Kohana::lang('ui_main.less_information'); ?></a> 

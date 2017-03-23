@@ -8,7 +8,7 @@
 }
 .ui-accordion .ui-accordion-header a {
 	padding: 0.5em 2.2em 0.5em 0.5em;
-	color: #797979;
+	color: #FF5139;
 	font-weight: bold;
 }
 #accordion .ui-accordion-header .small-link-button {
@@ -45,4 +45,13 @@
 }
 .ui-accordion .ui-accordion-content a.reset, .ui-accordion .ui-accordion-header a.reset, a.reset {
 	color: #981e01;
+}
+
+.r_date {
+	display: inline-block;
+}
+
+.r_comments {
+	margin: 0 0 0 10px;
+	color: rgba(0, 0, 0, 0.87);
 }
