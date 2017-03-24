@@ -1,40 +1,22 @@
 
 </div>
 <div class="ayuda-incidencia">
-  <div class="row">
-    <div class="ayuda-content">
-      <h5>Ayuda a que la ayuda llegue.</h5>
-      <h4>Informa si estás en una zona con una situación de emergencia o que necesita apoyo.</h4>
-      <form action="#">
-				<p>
-				  <input class="with-gap red" name="group3" type="checkbox" id="test1" />
-				  <label for="test1">Accidentes, muertes, desaparecidos</label>
-				</p>
-				<p>
-				  <input class="with-gap red" name="group3" type="checkbox" id="test2" />
-				  <label for="test2">Huayco, inundación, lluvia</label>
-				</p>
-				<p>
-				  <input class="with-gap red" name="group3" type="checkbox" id="test3" />
-				  <label for="test3">Carretera o puerto bloqueado</label>
-				</p>
-				<p>
-				  <input class="with-gap red" name="group3" type="checkbox" id="test4" />
-				  <label for="test4">Falta de comida, agua o ropa</label>
-				</p>
-				<p>
-				  <input class="with-gap red" name="group3" type="checkbox" id="test7" />
-				  <label for="test7">Damnificados sin hogar</label>
-				</p>
-				<p>
-				  <input class="with-gap red" name="group3" type="checkbox" id="test5" />
-				  <label for="test5">Otros</label>
-				</p>
-      </form>
-      <a href="<?php url::site(); ?>/reports/submit" class="btn btn-large red">ENVIAR INCIDENCIA</a>
-      <p class="informa-ayuda">Informa responsablemente.</p>
+    <div class="row">
+        <div class="ayuda-content">
+            <h5>Ayuda a que la ayuda llegue.</h5>
+            <h4>Informa si estás en una zona con una situación de emergencia o que necesita apoyo.</h4>
+            <form action="/reports/submit" method="get">
+              <?php foreach (category::get_category_tree_data() as $category): ?>
+                  <p>
+                      <input class="with-gap red" name="incident-categories[]" type="checkbox" id="category-<?php print $category['category_id']; ?>" value="<?php print $category['category_id']; ?>" />
+                      <label for="category-<?php print $category['category_id']; ?>"><?php print $category['category_title']; ?></label>
+                  </p>
+              <?php endforeach; ?>
+                <button class="btn btn-large red">ENVIAR INCIDENCIA</button>
+            </form>
+            <p class="informa-ayuda">Informa responsablemente.</p>
+        </div>
     </div>
-  </div>
 </div>
 
 	<!-- wrapper -->
@@ -161,97 +143,98 @@
 				<div class="layers-filters clearingfix">
 					<strong><?php echo Kohana::lang('ui_main.layers_filter');?> 
 						<span>
+
 							[<a href="javascript:toggleLayer('kml_switch_link', 'kml_switch')" id="kml_switch_link">
 								<?php echo Kohana::lang('ui_main.hide'); ?>
 							</a>]
 						</span>
-					</strong>
-				</div>
-				<ul id="kml_switch" class="category-filters">
-				<?php
-					foreach ($layers as $layer => $layer_info)
-					{
-						$layer_name = $layer_info[0];
-						$layer_color = $layer_info[1];
-						$layer_url = $layer_info[2];
-						$layer_file = $layer_info[3];
+                  </strong>
+              </div>
+              <ul id="kml_switch" class="category-filters">
+                <?php
+                foreach ($layers as $layer => $layer_info)
+                {
+                  $layer_name = $layer_info[0];
+                  $layer_color = $layer_info[1];
+                  $layer_url = $layer_info[2];
+                  $layer_file = $layer_info[3];
 
-						$layer_link = ( ! $layer_url)
-						    ? url::base().Kohana::config('upload.relative_directory').'/'.$layer_file
-						    : $layer_url;
-						
-						echo '<li>'
-						    . '<a href="#" id="layer_'. $layer .'">'
-						    . '<span class="swatch" style="background-color:#'.$layer_color.'"></span>'
-						    . '<span class="layer-name">'.$layer_name.'</span>'
-						    . '</a>'
-						    . '</li>';
-					}
-				?>
-				</ul>
-				<!-- /Layers -->
-			<?php endif; ?>
-			
-			<?php
-			// Action::main_sidebar_post_filters - Add Items to the Entry Page after filters
-			Event::run('ushahidi_action.main_sidebar_post_filters');
-			?>
+                  $layer_link = ( ! $layer_url)
+                    ? url::base().Kohana::config('upload.relative_directory').'/'.$layer_file
+                    : $layer_url;
 
-			<br />
+                  echo '<li>'
+                    . '<a href="#" id="layer_'. $layer .'">'
+                    . '<span class="swatch" style="background-color:#'.$layer_color.'"></span>'
+                    . '<span class="layer-name">'.$layer_name.'</span>'
+                    . '</a>'
+                    . '</li>';
+                }
+                ?>
+              </ul>
+              <!-- /Layers -->
+          <?php endif; ?>
 
-			<!-- additional content -->
-			<?php if (Kohana::config('settings.allow_reports')): ?>
-				<div class="how-to-report additional-content grey lighten-4">
-					<h5><?php echo Kohana::lang('ui_main.how_to_report'); ?></h5>
+          <?php
+          // Action::main_sidebar_post_filters - Add Items to the Entry Page after filters
+          Event::run('ushahidi_action.main_sidebar_post_filters');
+          ?>
 
-					<div class="how-to-report-methods">
+            <br />
 
-						<!-- Web Form -->
-						<div class="web-form">
-							<?php echo Kohana::lang('ui_main.report_option_4'); ?> <a href="<?php echo url::site().'reports/submit/'; ?>">aquí
-							</a>
-						</div>
+            <!-- additional content -->
+          <?php if (Kohana::config('settings.allow_reports')): ?>
+              <div class="how-to-report additional-content grey lighten-4">
+                  <h5><?php echo Kohana::lang('ui_main.how_to_report'); ?></h5>
 
-						<!-- Twitter -->
-						<?php if ( ! empty($twitter_hashtag_array)): ?>
-						<div class="twitter">
-							<strong><?php echo Kohana::lang('ui_main.report_option_3'); ?>:</strong><br/>
-							<?php foreach ($twitter_hashtag_array as $twitter_hashtag): ?>
-								<span>#<?php echo $twitter_hashtag; ?></span>
-								<?php if ($twitter_hashtag != end($twitter_hashtag_array)): ?>
-									<br />
-								<?php endif; ?>
-							<?php endforeach; ?>
-						</div>
-						<?php endif; ?>
+                  <div class="how-to-report-methods">
 
-					</div>
+                      <!-- Web Form -->
+                      <div class="web-form">
+                        <?php echo Kohana::lang('ui_main.report_option_4'); ?> <a href="<?php echo url::site().'reports/submit/'; ?>">aquí
+                          </a>
+                      </div>
 
-				</div>
-			<?php endif; ?>
+                      <!-- Twitter -->
+                    <?php if ( ! empty($twitter_hashtag_array)): ?>
+                        <div class="twitter">
+                            <strong><?php echo Kohana::lang('ui_main.report_option_3'); ?>:</strong><br/>
+                          <?php foreach ($twitter_hashtag_array as $twitter_hashtag): ?>
+                              <span>#<?php echo $twitter_hashtag; ?></span>
+                            <?php if ($twitter_hashtag != end($twitter_hashtag_array)): ?>
+                                  <br />
+                            <?php endif; ?>
+                          <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
 
-			<!-- / additional content -->
-			
-			<?php
-			// Action::main_sidebar - Add Items to the Entry Page Sidebar
-			Event::run('ushahidi_action.main_sidebar');
-			?>
-	
-		</div>
-		<!-- / right column -->
-	
-</div>
+                  </div>
 
-<!-- content -->
-<div class="row">
+              </div>
+          <?php endif; ?>
 
-	<!-- content blocks -->
-	<div class="col s12">
-		<ul class="content-column">
-			<?php blocks::render(); ?>
-		</ul>
-	</div>
-	<!-- /content blocks -->
+            <!-- / additional content -->
 
-</div>
-<!-- content -->
+          <?php
+          // Action::main_sidebar - Add Items to the Entry Page Sidebar
+          Event::run('ushahidi_action.main_sidebar');
+          ?>
+
+        </div>
+        <!-- / right column -->
+
+    </div>
+
+    <!-- content -->
+    <div class="row">
+
+        <!-- content blocks -->
+        <div class="col s12">
+            <ul class="content-column">
+              <?php blocks::render(); ?>
+            </ul>
+        </div>
+        <!-- /content blocks -->
+
+    </div>
+    <!-- content -->

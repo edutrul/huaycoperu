@@ -1,0 +1,206 @@
+<h1 id="technical-people-">Technical people:</h1>
+<p>url: <a href="http://emergenciaperu.com/">http://emergenciaperu.com/</a>
+github: <a href="https://github.com/edutrul/huaycoperu">https://github.com/edutrul/huaycoperu</a>
+Steps to deploy:</p>
+<ol>
+<li>git clone git@github.com:edutrul/huaycoperu.git</li>
+<li>Setup vhost local.emergenciaperu.com</li>
+<li>create database db_local_huaycoperu</li>
+<li>Import DB: db_local_huaycoperu_2017-03-18.sql (attached)</li>
+<li>On your browser go to local.emergenciaperu.com</li>
+<li>Add your changes and ping @edutrul to pull changes (we are not doing forks but you are free to do it and submit PR)</li>
+</ol>
+<h1 id="for-trello-process-">For trello process.</h1>
+<p>Please assign a task and move it to IN PROGRESS, once done please move it to DONE (and ping in fb chat that you&#39;ve done that task)</p>
+<h1 id="users">Users</h1>
+<p>Here are dummy users</p>
+<p>user: superadmin@example.com
+contraseña: superadmin
+role: superadmin(TODOS LOS PRIVILEGIOS)</p>
+<p>user: administrador@example.com
+contraseña: administrador
+role: admin(CASI TODOS los privilegios)</p>
+<p>user: member@example.com
+contraseña: member
+role: member (Acceso al perfil del usuario)</p>
+<h1 id="team">Team</h1>
+<ul>
+<li>Benji Santos</li>
+<li>Carlos Salvatierra</li>
+<li>Jhon Mendoza</li>
+<li>Eduardo Telaya</li>
+<li>Edwin Junior Deza</li>
+<li>Elvis Rivera</li>
+<li>Claudia Márquez</li>
+<li>Laura Márquez</li>
+<li>David Vilca</li>
+<li>Alvaro Concha</li>
+<li>Cristhian Huertos</li>
+<li>Edwin (edwin245)</li>
+<li>Renzo Telenta</li>
+<li>Patricia Mejia</li>
+<li>Fernando Balta</li>
+</ul>
+<p>Pasos para revisar los tweets de usuarios que usaron los hashtags &quot;huaycoperu, FuerzaPerú, UnidosXPiura, UnaSolaFuerza&quot; y apartir de ellos con un solo click (los pueden convertir en incidencias)
+Loguearse como administrador en
+<a href="http://emergenciaperu.com/login">http://emergenciaperu.com/login</a>
+user: superadmin@example.com
+contraseña: superadmin</p>
+<p>Ir a <a href="http://emergenciaperu.com/admin/messages/index/3">http://emergenciaperu.com/admin/messages/index/3</a>
+y veran aprox más de 7000 tweets!!</p>
+<p>Determinar si un tweet es una incidencia</p>
+<p>En cada registro de tweet veran un enlace &quot;Crear incidencia?&quot; (hacer click)
+Les llevara a una página para crear incidencia donde el tweet aparecera en el campo descripción (si el tweet tiene una dirección entonces manualmente copian y pegan la dirección en la casilla del mapa. además si el tweet pertenece a una categoria entonces marcar la categoría</p>
+<p>Click Guardar Inciencia</p>
+<h2 id="van-a-la-p-gina-principal-emergenciaperu-com-y-deberian-de-ver-su-incidencia-reportada-gracias-al-tweet">Van a la página principal emergenciaperu.com y deberian de ver su incidencia reportada gracias al tweet</h2>
+<p>fin de los pasos</p>
+<h1 id="pasos-para-crear-tareas-issues-bugs-en-trello">Pasos para crear tareas/issues/bugs en trello</h1>
+<p>toda tarea debe tener un título (inicia con un verbo)
+al realizar click en la cartilla de trello debe tener la siguiente estructura:</p>
+<p>Descripción
+{{ La descripción
+y sus respectivos pasos para reproducir o nuevo requerimiento a implementar(si paso a paso)
+}}
+Implementación
+{{ opcional: es como implementar esta solución
+agregar implementación es buen para que otro Developer(sea backend/frontend) pueda leerlo y ejecutar }}</p>
+<h1 id="pasos-para-probar">Pasos para probar</h1>
+<p>{{ son los pasos para verificar que esta tarea este completa y funcional - tener descrito esto nos ayudara para que otra persona pueda revisar si esta tarea esta terminada o no(o determinar los siguientes pasos }}</p>
+<h1 id="correo">Correo</h1>
+<p><a href="https://mail.zoho.com">https://mail.zoho.com</a>
+User: contacto@emergenciaperu.com
+Pass: emergenciaperu2017</p>
+<h1 id="significado-de-etiquetas-en-trello">Significado de ETIQUETAS en trello</h1>
+<ul>
+<li>(colores) a las tareas de front</li>
+<li>(amarillo), back</li>
+<li>(celeste) y</li>
+<li>contenidos (naranja)</li>
+</ul>
+<h1 id="ushahidi-platform">Ushahidi Platform</h1>
+<p>The Ushahidi Platform is an open source web application for information collection, vizualisation and interactive 
+mapping. It allows people to collect and share their own stories using various mediums such
+as SMS, Web Forms, Email or Twitter. For more information about the platform and use cases (case studies) visit: <a href="http://www.ushahidi.com">http://www.ushahidi.com</a></p>
+<h2 id="system-requirements">System Requirements</h2>
+<p>To install the platform on your computer/server, the target system must meet the following requirements:</p>
+<ul>
+<li>PHP version 5.2.3 or greater (5.3 or greater is recommended)</li>
+<li>MySQL version 5.0 or greater</li>
+<li>An HTTP Server. Kohana, which Ushahidi is built on, is known to work with the following web servers:<ul>
+<li>Apache 1.3+</li>
+<li>Apache 2.0+</li>
+<li>lighttpd</li>
+<li>nginx</li>
+<li>Microsoft Internet Information Server (MS IIS)</li>
+</ul>
+</li>
+<li>Unicode support in the operating system</li>
+</ul>
+<h2 id="required-extensions">Required Extensions</h2>
+<p>The follwing is a list of PHP extensions that must be installed on your server in order for Ushahidi to run properly:</p>
+<ul>
+<li>PCRE (<a href="http://php.net/pcre">http://php.net/pcre</a>) must be compiled with –enable-utf8 and –enable-unicode-properties for UTF-8 functions to work properly.</li>
+<li>iconv (<a href="http://php.net/iconv">http://php.net/iconv</a>) is required for UTF-8 transliteration.</li>
+<li>mcrypt (<a href="http://php.net/mcrypt">http://php.net/mcrypt</a>) is required for encryption.</li>
+<li>SPL (<a href="http://php.net/spl">http://php.net/spl</a>) is required for several core libraries.</li>
+<li>mbstring (<a href="http://php.net/mbstring">http://php.net/mbstring</a>) which speeds up Kohana&#39;s UTF-8 functions.</li>
+<li>cURL (<a href="http://php.net/curl">http://php.net/curl</a>) which is used to access remote sites.</li>
+<li>MySQL (<a href="http://php.net/mysql">http://php.net/mysql</a>) is required for database access.</li>
+<li>IMAP (<a href="http://php.net/imap">http://php.net/imap</a>) is required for email functionality.</li>
+<li>GD (<a href="http://php.net/gd">http://php.net/gd</a>) is required for image processing</li>
+</ul>
+<p><strong>NOTE: Need to figure out what extensions you already have installed on your server? Here are instructions to do just that: <a href="http://jontangerine.com/silo/php/phpinfo/">http://jontangerine.com/silo/php/phpinfo/</a></strong></p>
+<h2 id="optional-server-requirements">Optional Server Requirements</h2>
+<p>To use Ushahidi&#39;s &quot;Clean URLS&quot; feature on an Apache Web Server, you will need the mod_rewrite module
+and the ability to use local <code>.htaccess</code> files. </p>
+<h3 id="installing-mod_rewrite">Installing mod_rewrite</h3>
+<h5 id="debian-ubuntu-flavours-of-linux">Debian/Ubuntu flavours of Linux</h5>
+<pre><code>sudo a2enmod rewrite
+</code></pre><h5 id="centos-os-x-and-windows">CentOS, OS X and Windows</h5>
+<p>Make sure the following line is <strong>NOT</strong> commented in your <code>httpd.conf</code></p>
+<pre><code>LoadModule rewrite_module
+</code></pre><h3 id="additional-configuration">Additional Configuration</h3>
+<p>To check if local <code>.htaccess</code> files are allowed, verify that the &quot;AllowOverride&quot; directive in your Apache config 
+(for the web server directory in which you have installed Ushahidi) has been set to &quot;All&quot; i.e.:</p>
+<pre><code>&lt;Directory [your-document-root-directory]&gt;
+    ...
+    AllowOverride All
+    ...
+&lt;/Directory&gt;
+</code></pre><p><strong>NOTE:</strong> </p>
+<ul>
+<li>Clean URLs means that the URLs of your deployment will not have the &#39;index.php&#39; prefix</li>
+<li>You <strong>MUST</strong> restart your Apache web server after making the changes outlined above</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<ul>
+<li><h4 id="download-and-extract-ushahidi">Download and extract Ushahidi</h4>
+<p>  You can obtain the official release of the software from <a href="http://download.ushahidi.com">the download site</a>. 
+  Alternatively, you can find downloads for the current and previous releases on the <a href="https://wiki.ushahidi.com/display/WIKI/Ushahidi+Platform+Downloads">Wiki</a></p>
+<p>  To unzip/extract the archive on a typical Unix/Linux command line:</p>
+<pre><code>  tar -xvf Ushahidi_Web-xxxx.tar.gz
+</code></pre><p>  or in the case of a zip file:</p>
+<pre><code>  unzip Ushahidi_Web-xxxx.zip
+</code></pre><p>  This will create a new directory Ushahidi_Web-xxxx containing all the Ushahidi platform files and directories - Move the contents of this directory
+  into a directory within your webserver&#39;s document root or your public HTML directory.</p>
+<h5 id="getting-the-latest-develop-code-caution-only-do-this-if-you-know-what-you-re-doing-">Getting the latest develop code (CAUTION: only do this if you know what you&#39;re doing)</h5>
+<p>  clone the latest code from github</p>
+<pre><code>  git clone --recursive git://github.com/ushahidi/Ushahidi_Web.git
+</code></pre><p>  We add the recursive flag so that git will clone the submodules too      </p>
+</li>
+<li><h4 id="ensure-the-following-directories-are-writable-i-e-have-their-permission-values-set-to-777-">Ensure the following directories are writable (i.e. have their permission values set to 777)</h4>
+<ul>
+<li>application/config</li>
+<li>application/cache</li>
+<li>application/logs</li>
+<li>media/uploads</li>
+<li><p>.htaccess</p>
+<p>On Unix/Linux, you can change the permissions as follows:</p>
+<p>  cd path-to-webserver-document-root-directory
+  chmod -R 777 application/config
+  chmod -R 777 application/cache
+  chmod -R 777 application/logs
+  chmod -R 777 media/uploads
+  chmod 777 .htaccess</p>
+<p><strong>NOTE: The process of configuring file permissions is different for various operating systems. Here are some helpful links about permissions for the Windows (<a href="http://support.microsoft.com/kb/308419">http://support.microsoft.com/kb/308419</a>) and Unix (<a href="http://www.washington.edu/computing/unix/permissions.html">http://www.washington.edu/computing/unix/permissions.html</a>) operating systems.</strong></p>
+</li>
+</ul>
+</li>
+<li><h4 id="create-the-ushahidi-database">Create the Ushahidi database</h4>
+<p>  Ushahidi stores all its information in a database. You must therefore create this database in order to install Ushahidi. This is done as follows:</p>
+<pre><code>  mysqladmin -u &#39;username&#39; -p create &#39;databasename&#39;
+</code></pre><p>  MySQL will prompt for the password for the <username> database password and then create the initial database files. Next, you must log in and set the 
+  database access rights:</p>
+<pre><code>  mysql -u &#39;username&#39; -p
+</code></pre><p>  Again, you will be prompted for the &#39;username&#39; database password. At the MySQL prompt, enter the following command:</p>
+<pre><code>  GRANT SELECT, INSERT, DELETE, UPDATE, CREATE, DROP, ALTER, INDEX, LOCK TABLES on database.* 
+  TO &#39;username&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;password&#39;;
+</code></pre><p>  Where:</p>
+<ul>
+<li>&#39;databasename&#39; is the name of your database</li>
+<li>&#39;username@localhost&#39; is the name of your MySQL account</li>
+<li><p>&#39;password&#39; is the password required for that username</p>
+<p><strong>NOTE: Your account must have all the privileges listed above in order to run Ushahidi on your webserver.</strong></p>
+</li>
+</ul>
+</li>
+<li><h4 id="ensure-php-error_reporting-level-is-compatable">Ensure PHP error_reporting level is compatable</h4>
+<p>  As of PHP-5.4 Ushahidi doesn&#39;t work with the error_reporting level E_STRICT.  Ensure this level is excluded from the error_reporting configuration.</p>
+</li>
+<li><h4 id="run-the-install-script">Run the install script</h4>
+<p>  To run the install script, point your browser to the base url of your website: (e.g. <a href="http://www.example.com">http://www.example.com</a>).</p>
+<p>  You will be guided through a series of screens to set up the database and site settings depending on the installation method you choose (Basic or Advanced)</p>
+</li>
+<li><h4 id="clean-up">Clean up</h4>
+<h5 id="delete-the-installer">Delete the installer</h5>
+<p>  Leaving the installer files in your installation is a security risk.
+  Now you&#39;ve installed successfully, <strong>Delete the entire installer directory</strong></p>
+<h5 id="remove-write-permissions-from-config-files">Remove write permissions from config files</h5>
+<pre><code>  cd path-to-webserver-document-root-directory
+  chmod -R 755 application/config
+  chmod 644 application/config/*
+  chmod 644 .htaccess
+</code></pre></li>
+</ul>
+<h2 id="additional-information">Additional Information</h2>
+<p>For further references and documentation, head over to our wiki (<a href="http://wiki.ushahidi.com">http://wiki.ushahidi.com</a>). Also, we encourage you to drop by our forums (<a href="https://wiki.ushahidi.com/display/forums/Ushahidi+Forums">https://wiki.ushahidi.com/display/forums/Ushahidi+Forums</a>) if you have any additional questions or concerns.</p>
