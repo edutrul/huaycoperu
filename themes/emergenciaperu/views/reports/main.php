@@ -69,7 +69,7 @@
 						<div class="f-category-box">
 							<ul class="filter-list fl-categories" id="category-filter-list">
 								<li>
-									<a href="#"><?php
+									<a href="#" id="fds"><?php
 									$all_cat_image = '&nbsp';
 									$all_cat_image = '';
 									if($default_map_all_icon != NULL) {

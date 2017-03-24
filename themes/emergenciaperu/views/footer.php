@@ -7,8 +7,20 @@
 		<a href="http://voluntariado.emergenciaperu.com/" class="btn btn-large" target="_blank">Brindar ayuda</a>
 	</div>
 
-	<div class="footer row center">
-		<p>Está página ha sido hecha colaborativamente en Hackspace Perú. <a href="https://www.facebook.com/HackSpacePeru" target="_blank">CONTACTO</a></p>
+	<div class="footer center">
+		<div class="footer-redes-sociales">	
+			<a href="https://www.facebook.com/groups/emergenciaperu/" target=>
+				<img src="<?php echo url::file_loc('img'); ?>media/img/facebook.png"" alt="Grupo de Facebook">
+			</a>
+
+			<a href="https://github.com/edutrul/huaycoperu" target="_blank">
+				<img src="<?php echo url::file_loc('img'); ?>media/img/github.png"" alt="Github del proyecto">
+			</a>
+
+			<a href="https://twitter.com/search?f=tweets&amp;q=%23UnaSolaFuerza&amp;src=typd" target="_blank">
+				<img src="<?php echo url::file_loc('img'); ?>media/img/twitter.png"" alt="# Oficial">
+			</a>
+		</div>
 	</div>
 
 	<?php
@@ -23,7 +35,6 @@
 
 		});
 		
-		var header_h = $("#header").outerHeight();
 		var lineAnimation = function (el) {
 			var $item = $(el);
 			var item_l = $item.position().left;
@@ -35,7 +46,7 @@
 			});
 		};
 
-    	lineAnimation(".main-nav__link--active");
+		lineAnimation(".main-nav__link--active");
 
 
         $(".main-nav__link").hover(
@@ -43,21 +54,17 @@
 			    lineAnimation(this);
 			},
 			function() {
-			    lineAnimation(".main-nav__link--active");
+				if ( $(".main-nav__link--active").length) {
+			   		lineAnimation(".main-nav__link--active");
+			   } else{
+			   		$(".main-nav__line").css({
+						left: 0,
+						width: 0	
+					});
+			   }
 			}
 	    );
 
-		$( window ).resize(function() {
-			if ($(".container").outerWidth() >= 970) {
-			    header_h = $("#header").outerHeight();
-			    lineAnimation(".main-nav__link--active");
-			} else if ($(".container").outerWidth() >= 1170) {
-			    header_h = $("#header").outerHeight();
-			    lineAnimation(".main-nav__link--active");
-			} else {
-			    header_h = $("#header").outerHeight();
-			}
-		});	
 	</script>
 </body>
 </html>
