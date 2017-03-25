@@ -27,7 +27,7 @@
 ul.filter-list { list-style-type:none; position:relative; }
 ul.filter-list ul { list-style-type:none; padding:0 0 0 20px; }
 ul.filter-list li { display:block; position:relative; }
-ul.filter-list li a { display:block; position:relative; overflow:auto; padding:3px 0 3px 20px; margin-bottom:3px; }
+ul.filter-list li a { display:block; position:relative; overflow:hidden; padding:3px 0 3px 20px; margin-bottom:3px; }
 
 ul.filter-list li a.selected {
     background:#dbdbdb url("../images/icon_sprite-2.png") -22px -103px no-repeat; 
@@ -37,9 +37,38 @@ ul.filter-list li a.selected {
     border-radius: 3px; 
 }
 
-ul.filter-list li a span.item-swatch { display:block; height:16px; width:16px; margin-right: 8px; border:1px solid white; float:left; overflow: hidden; }
+ul.filter-list li a span.item-swatch { 
+	display: none;
+}
+
 ul.filter-list li a span.item-icon { display:block; float:left; margin-right:8px; height:16px; width:16px; }
-ul.filter-list li a span.item-title { display:block; padding:0 40px 0 26px; }
+
+ul.filter-list li a span.item-title { 
+	display: block;
+	padding: 4px 20px 0 30px;
+	color: #6b6969;
+	background: url(../images/filters/alarma1.png) no-repeat scroll 0 0;
+	height: 30px;
+	margin: 0 0 3px 0;
+}
+
+ul.filter-list li a#filter_link_cat_1 span.item-title { 
+	background: url(../images/filters/alarma2.png) no-repeat scroll 0 0;
+}
+
+ul.filter-list li a#filter_link_cat_2 span.item-title { 
+	background: url(../images/filters/alarma3.png) no-repeat scroll 0 0;
+}
+
+ul.filter-list li a#filter_link_cat_3 span.item-title { 
+	background: url(../images/filters/alarma4.png) no-repeat scroll 0 0;
+}
+
+ul.filter-list li a#filter_link_cat_4 span.item-title { 
+	background: url(../images/filters/alarma5.png) no-repeat scroll 0 0;
+}
+
+
 ul.filter-list li a span.item-count {
     display:block; 
     padding:1px 3px; 
@@ -47,7 +76,7 @@ ul.filter-list li a span.item-count {
     right:0;
     top:4px;
     background:#dbdbdb;
-    color:#636363;
+    color: #6b6969;
     -webkit-border-radius: 3px; 
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -136,32 +165,24 @@ a.filter-button:hover { text-decoration:none; background:#707070;  }
     background: none;
     font-size: 16px;
     color: #FF5139;
+    border-bottom: 1px solid #FF5139;
+    border-radius: 0;
 }
 #accordion .ui-state-active a.f-title{
       color: #3E3E3E;
 }
 #accordion .ui-accordion .ui-accordion-header a{
-    padding: 0.5em 2.2em 0.5em 0.5em;
+    padding: 0.5em 2.2em 0.5em 0;
     font-weight: bold;
     font-size: 14px;
-    color: #FF5139;
+    color: #FF5139 !important;
 }
 #accordion .ui-accordion-header .small-link-button{
-  color: #6b6969;
-  font-size: 12px;
-      padding-top: 8px;
+	color: #6b6969;
+	font-size: 10px;
+	padding-top: 11px;
 }
-#accordion .ui-accordion .ui-accordion-content{
-    padding: 0 8px 18px 8px;
-    font-size: 11px;
-    background: none;
-    border-radius: 0;
-    padding-left: 0;
-    border-top: 0;
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
-}
+
 #accordion ul.filter-list{
   padding-top: 20px;
   padding-bottom: 5px;
@@ -170,6 +191,17 @@ a.filter-button:hover { text-decoration:none; background:#707070;  }
   padding: 2px 0 3px 11px;
 }
 
+#accordion .ui-state-active a.f-title {
+    color: #FF5139;
+}
+
+.ui-accordion .ui-accordion-content{
+	padding: 0 8px 0 0 !important;
+	font-size: 11px;
+	border: 0;
+	background: white;
+	border-top: 1px solid #FF5139;
+}
 
 @media (max-width: 580px) {
     #reports-box {

@@ -36,9 +36,9 @@
         text-transform: uppercase;
 
         &:hover {
-            background-color: color("grey", "lighten-4");
-            text-decoration: none;
-            color: $navbar-font-color;
+					background-color: transparent;
+					text-decoration: none;
+					color: $navbar-font-color;
         }
     }
 
@@ -79,18 +79,26 @@
 
     ul {
       li {
+      	padding: 0 8px;
+      	a {
+      		padding: 0 0;
+      	}
 				&:last-child a {
 				  margin-right: 0;
 				}
-        }
+      }
     }
+
+		.main-nav {
+			position: relative;
+		}
 
     .main-nav__line {
 			display: none;
 			position: absolute;
-			top: 0;
+			top: 60px;
 			left: 0;
-			background: #00BFE1;
+			background: #ff5139;
 			height: 2px;
 			-webkit-transition: all .5s;
 			transition: all .5s;
@@ -235,16 +243,16 @@
 			border: 0;
 			outline: 0;
 			padding: 0 0 0 0;
-			margin: 26px 0px 48px 20px;
+			margin: 28px 0px 48px 20px;
 			&:hover {
 				background: white;
 			}
 			.main-nav__button__icon {
 				display: block;
 				position: absolute;
-				height: 5px;
+				height: 4px;
 				width: 100%;
-				background: black;
+				background: rgba(0, 0, 0, 0.87);
 				opacity: 1;
 				right: 0;
 				-webkit-transform: rotate(0deg);
@@ -259,17 +267,17 @@
 
 			.main-nav__button__icon:nth-child(2) {
 				top: 10px;
-				width: 70%;
+				width: 100%;
 			}
 
 			.main-nav__button__icon:nth-child(3) {
 				top: 10px;
-				width: 70%;
+				width: 100%;
 			}
 
 			.main-nav__button__icon:nth-child(4) {
 				top: 20px;
-				width: 90%;
+				width: 100%;
 			}
 		}
 
@@ -301,10 +309,11 @@
 
 		#mobile-demo {
 			li {
+				padding: 0 0;
 				a {
 					padding: 0 15px;
 					transition: background-color .0s;
-					&:hover {
+					&:hover, &:active, &:focus {
 						background: #ff5139;
 						background-color: #ff5139;
 						color: white !important;

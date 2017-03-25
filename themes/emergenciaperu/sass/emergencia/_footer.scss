@@ -43,14 +43,19 @@
     }
 }
 
-.footer p {
-    margin: 34px 0 0 0;
-    font-size: 14px;
-    color: #666666;
-
+.footer-redes-sociales {
     a {
-        color: #666666;
-        font-weight: 700;
-        text-decoration: underline;
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		text-align: center;
+		margin: 0 8px;
+		opacity: 1;
+		&:hover {
+			opacity: 0.8;
+		}
+        img {
+			width: 100%;
+        }
     }
 }

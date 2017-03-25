@@ -6,30 +6,18 @@
 		<p>Juntos podemos dar apoyo a los que más necesitan</p>
 		<a href="http://voluntariado.emergenciaperu.com/" class="btn btn-large" target="_blank">Brindar ayuda</a>
 	</div>
+			<a href="https://www.facebook.com/groups/emergenciaperu/" target=>
+				<img src="<?php echo url::file_loc('img'); ?>media/img/facebook.png"" alt="Grupo de Facebook">
+			</a>
 
-	<div class="footer row center">
-		<a href="https://www.facebook.com/groups/emergenciaperu/" target="_blank" style="
-    padding: 5px;
-"><img src="http://www.emergenciaperu.com/themes/emergenciaperu/images/icons/facebook-4-48.png" alt="Grupo de Facebook" style="
-    height: 48px;
-    width: 48px;
-"></a>
-		<a href="https://github.com/edutrul/huaycoperu" target="_blank" style="
-    padding: 5px;
-"><img src="http://www.emergenciaperu.com/themes/emergenciaperu/images/icons/github-10-48.png" alt="Github del proyecto" style="
-    height: 48px;
-    width: 48px;
-"></a>
-		<a href="https://twitter.com/search?f=tweets&q=%23UnaSolaFuerza&src=typd" target="_blank" style="
-    padding: 5px;
-"><img src="http://www.emergenciaperu.com/themes/emergenciaperu/images/icons/twitter-4-48.png" alt="# Oficial" style="
-    height: 48px;
-    width: 48px;
-"></a>
+			<a href="https://github.com/edutrul/huaycoperu" target="_blank">
+				<img src="<?php echo url::file_loc('img'); ?>media/img/github.png"" alt="Github del proyecto">
+			</a>
 
-	<?php if ($site_copyright_statement != ''): ?>
-  		<p><?php echo $site_copyright_statement; ?></p>
-      	<?php endif; ?>
+			<a href="https://twitter.com/search?f=tweets&amp;q=%23UnaSolaFuerza&amp;src=typd" target="_blank">
+				<img src="<?php echo url::file_loc('img'); ?>media/img/twitter.png"" alt="# Oficial">
+			</a>
+		</div>
 	</div>
 
 	<?php
@@ -44,7 +32,6 @@
 
 		});
 		
-		var header_h = $("#header").outerHeight();
 		var lineAnimation = function (el) {
 			var $item = $(el);
 			var item_l = $item.position().left;
@@ -56,7 +43,7 @@
 			});
 		};
 
-    	lineAnimation(".main-nav__link--active");
+		lineAnimation(".main-nav__link--active");
 
 
         $(".main-nav__link").hover(
@@ -64,21 +51,17 @@
 			    lineAnimation(this);
 			},
 			function() {
-			    lineAnimation(".main-nav__link--active");
+				if ( $(".main-nav__link--active").length) {
+			   		lineAnimation(".main-nav__link--active");
+			   } else{
+			   		$(".main-nav__line").css({
+						left: 0,
+						width: 0	
+					});
+			   }
 			}
 	    );
 
-		$( window ).resize(function() {
-			if ($(".container").outerWidth() >= 970) {
-			    header_h = $("#header").outerHeight();
-			    lineAnimation(".main-nav__link--active");
-			} else if ($(".container").outerWidth() >= 1170) {
-			    header_h = $("#header").outerHeight();
-			    lineAnimation(".main-nav__link--active");
-			} else {
-			    header_h = $("#header").outerHeight();
-			}
-		});	
 	</script>
 </body>
 </html>
