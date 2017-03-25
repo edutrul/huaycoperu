@@ -75,7 +75,7 @@
                     <div class="main-nav__line"></div>
                     <ul id="nav-mobile" class="hide-on-med-and-down">
                       <?php nav::main_tabs($this_page, ['home','contact']); ?>
-                      <li><a href="http://voluntariado.emergenciaperu.com/" class="waves-effect waves-light btn grey-text" target="_blank"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA</br><span>#SMS 993 286 846</span></a></li>
+                      <li><a href="http://voluntariado.emergenciaperu.com/" class="waves-effect waves-light btn grey-text" target="_blank"><img src="<?php echo url::file_loc('img'); ?>media/img/heart-icon.png">BRINDAR AYUDA</br><span>#SMS 993286846</span></a></li>
                     </ul>
                   </div>
                  
