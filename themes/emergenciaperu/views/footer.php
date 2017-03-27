@@ -6,6 +6,9 @@
 		<p>Juntos podemos dar apoyo a los que más necesitan</p>
 		<a href="http://voluntariado.emergenciaperu.com/" class="btn btn-large" target="_blank">Brindar ayuda</a>
 	</div>
+			
+	<div class="footer center">
+		<div class="footer-redes-sociales">	
 			<a href="https://www.facebook.com/groups/emergenciaperu/" target=>
 				<img src="<?php echo url::file_loc('img'); ?>media/img/facebook.png"" alt="Grupo de Facebook">
 			</a>
@@ -19,7 +22,7 @@
 			</a>
 		</div>
 	</div>
-
+	
 	<?php
 	echo $footer_block;
 	// Action::main_footer - Add items before the </body> tag

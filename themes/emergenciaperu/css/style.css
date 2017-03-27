@@ -8872,6 +8872,15 @@ h5 {
   font-weight: 700;
 }
 
+.incidencias .how-to-report-methods .web-form2 {
+  background: url("../images/sms.png") no-repeat;
+}
+
+.incidencias .how-to-report-methods .web-form2 span {
+  font-weight: bold;
+  color: #f83933;
+}
+
 .cat-filters strong {
   font-size: 14px;
   font-weight: 700;
