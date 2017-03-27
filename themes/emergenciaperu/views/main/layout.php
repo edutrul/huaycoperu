@@ -194,6 +194,9 @@
                         <?php echo Kohana::lang('ui_main.report_option_4'); ?> <a href="<?php echo url::site().'reports/submit/'; ?>">aquí
                           </a>
                       </div>
+                      <div class="web-form2">
+                        <p>Enviando un sms al celular:</p><span>993286846</span>
+                      </div>
 
                       <!-- Twitter -->
                     <?php if ( ! empty($twitter_hashtag_array)): ?>
