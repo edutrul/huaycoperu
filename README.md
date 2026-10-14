@@ -15,18 +15,4 @@ Please assign a task and move it to IN PROGRESS, once done please move it to DON
 
 # Users
 
-Here are dummy users
-
-user: superadmin@example.com
-contraseña: superadmin
-role: superadmin(TODOS LOS PRIVILEGIOS)
-
-user: administrador@example.com
-contraseña: administrador
-role: admin(CASI TODOS los privilegios)
-
-user: member@example.com
-contraseña: member
-role: member (Acceso al perfil del usuario)
-
-
+Create your own local admin user after importing the database. No credentials are kept in this repository.
