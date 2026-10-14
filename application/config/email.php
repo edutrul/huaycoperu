@@ -21,8 +21,8 @@ $config['driver'] = 'smtp';
  */
 $config['options'] = [
     'hostname' => 'smtp.mailtrap.io',
-    'username' => '452938a81f43ffc76',
-    'password' => '7a98377241c01f',
+    'username' => '',
+    'password' => '',
     'port' => '2525'
 ];
 

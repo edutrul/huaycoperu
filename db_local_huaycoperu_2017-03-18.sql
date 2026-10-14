@@ -1446,7 +1446,7 @@ VALUES
 	(1,'site_name','HUAYCO PERU'),
 	(2,'site_tagline','huayco'),
 	(3,'site_banner_id',NULL),
-	(4,'site_email','luis.eduardo.telaya@gmail.com'),
+	(4,'site_email','admin@example.com'),
 	(5,'site_key',NULL),
 	(6,'site_language','es_PE'),
 	(7,'site_style','default'),
@@ -1497,7 +1497,7 @@ VALUES
 	(52,'email_ssl',NULL),
 	(53,'ftp_server',NULL),
 	(54,'ftp_user_name',NULL),
-	(55,'alerts_email','luis.eduardo.telaya@gmail.com'),
+	(55,'alerts_email','admin@example.com'),
 	(57,'facebook_appid',NULL),
 	(58,'facebook_appsecret',NULL),
 	(59,'db_version','119'),
@@ -1578,7 +1578,7 @@ LOCK TABLES `users` WRITE;
 
 INSERT INTO `users` (`id`, `riverid`, `name`, `email`, `username`, `password`, `logins`, `last_login`, `notify`, `updated`, `color`, `code`, `confirmed`, `public_profile`, `approved`, `needinfo`)
 VALUES
-	(1,'','Administrator','luis.eduardo.telaya@gmail.com','admin','04f1cdb33d87eb683895cde1c8588d4542b4d718e34a7603c0',1,1489817962,0,'2017-03-18 01:19:22','FF0000',NULL,1,0,1,0);
+	(1,'','Administrator','admin@example.com','admin','04f1cdb33d87eb683895cde1c8588d4542b4d718e34a7603c0',1,1489817962,0,'2017-03-18 01:19:22','FF0000',NULL,1,0,1,0);
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
